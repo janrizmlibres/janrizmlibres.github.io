@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  id: NPCProcGen.Core.Components.Enums
+  children:
+  - NPCProcGen.Core.Components.Enums.ActionState
+  - NPCProcGen.Core.Components.Enums.ActionType
+  - NPCProcGen.Core.Components.Enums.CrimeCategory
+  - NPCProcGen.Core.Components.Enums.ResourceType
+  - NPCProcGen.Core.Components.Enums.SocialPractice
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Components.Enums.ActionState
+  commentId: T:NPCProcGen.Core.Components.Enums.ActionState
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ActionState.html
+  name: ActionState
+  nameWithType: ActionState
+  fullName: NPCProcGen.Core.Components.Enums.ActionState
+- uid: NPCProcGen.Core.Components.Enums.ActionType
+  commentId: T:NPCProcGen.Core.Components.Enums.ActionType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ActionType.html
+  name: ActionType
+  nameWithType: ActionType
+  fullName: NPCProcGen.Core.Components.Enums.ActionType
+- uid: NPCProcGen.Core.Components.Enums.CrimeCategory
+  commentId: T:NPCProcGen.Core.Components.Enums.CrimeCategory
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.CrimeCategory.html
+  name: CrimeCategory
+  nameWithType: CrimeCategory
+  fullName: NPCProcGen.Core.Components.Enums.CrimeCategory
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums.SocialPractice
+  commentId: T:NPCProcGen.Core.Components.Enums.SocialPractice
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.SocialPractice.html
+  name: SocialPractice
+  nameWithType: SocialPractice
+  fullName: NPCProcGen.Core.Components.Enums.SocialPractice
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html

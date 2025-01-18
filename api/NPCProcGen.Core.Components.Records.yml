@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components.Records
+  commentId: N:NPCProcGen.Core.Components.Records
+  id: NPCProcGen.Core.Components.Records
+  children:
+  - NPCProcGen.Core.Components.Records.Crime
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Components.Records
+  nameWithType: NPCProcGen.Core.Components.Records
+  fullName: NPCProcGen.Core.Components.Records
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Components.Records.Crime
+  commentId: T:NPCProcGen.Core.Components.Records.Crime
+  href: NPCProcGen.Core.Components.Records.Crime.html
+  name: Crime
+  nameWithType: Crime
+  fullName: NPCProcGen.Core.Components.Records.Crime

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WorldState | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WorldState | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="Represents the global state of the world, including actors, structures, events, and crimes.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.Autoloads.WorldState">
+
+
+
+  <h1 id="NPCProcGen_Autoloads_WorldState" data-uid="NPCProcGen.Autoloads.WorldState" class="text-break">
+Class WorldState  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a>.<a class="xref" href="NPCProcGen.Autoloads.html">Autoloads</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the global state of the world, including actors, structures, events, and crimes.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ScriptPath(&quot;res://addons/NPCProcGen/Autoloads/WorldState.cs&quot;)]
+public class WorldState : Node, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GodotObject</span></div>
+      <div><span class="xref">Node</span></div>
+      <div><span class="xref">WorldState</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NPCProcGen_Autoloads_WorldState__ctor_" data-uid="NPCProcGen.Autoloads.WorldState.#ctor*"></a>
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__ctor" data-uid="NPCProcGen.Autoloads.WorldState.#ctor">
+  WorldState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private WorldState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__globalEvents" data-uid="NPCProcGen.Autoloads.WorldState._globalEvents">
+  _globalEvents
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Actions and interactions that have taken place and what actors performed them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;Event&gt; _globalEvents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.Core.Events.Event.html">Event</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__instance" data-uid="NPCProcGen.Autoloads.WorldState._instance">
+  _instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static readonly Lazy&lt;WorldState&gt; _instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy</a>&lt;<a class="xref" href="NPCProcGen.Autoloads.WorldState.html">WorldState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__solvedCrimes" data-uid="NPCProcGen.Autoloads.WorldState._solvedCrimes">
+  _solvedCrimes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Solved crimes and who apprehended the criminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;Crime&gt; _solvedCrimes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.Core.Components.Records.Crime.html">Crime</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__structures" data-uid="NPCProcGen.Autoloads.WorldState._structures">
+  _structures
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of structures in the world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;Node2D&gt; _structures</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Node2D</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__taskRecords" data-uid="NPCProcGen.Autoloads.WorldState._taskRecords">
+  _taskRecords
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tasks that are delegated to which individuals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;Event&gt; _taskRecords</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.Core.Events.Event.html">Event</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Autoloads_WorldState__unsolvedCrimes" data-uid="NPCProcGen.Autoloads.WorldState._unsolvedCrimes">
+  _unsolvedCrimes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Crimes that are publicly known and not yet solved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;Crime&gt; _unsolvedCrimes</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.Core.Components.Records.Crime.html">Crime</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NPCProcGen_Autoloads_WorldState_Actors_" data-uid="NPCProcGen.Autoloads.WorldState.Actors*"></a>
+
+  <h3 id="NPCProcGen_Autoloads_WorldState_Actors" data-uid="NPCProcGen.Autoloads.WorldState.Actors">
+  Actors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of actors in the world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActorTag2D&gt; Actors { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Autoloads_WorldState_Instance_" data-uid="NPCProcGen.Autoloads.WorldState.Instance*"></a>
+
+  <h3 id="NPCProcGen_Autoloads_WorldState_Instance" data-uid="NPCProcGen.Autoloads.WorldState.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the singleton instance of the WorldState.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WorldState Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Autoloads.WorldState.html">WorldState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_Autoloads_WorldState_Initialize_" data-uid="NPCProcGen.Autoloads.WorldState.Initialize*"></a>
+
+  <h3 id="NPCProcGen_Autoloads_WorldState_Initialize_System_Collections_Generic_List_NPCProcGen_ActorTag2D__" data-uid="NPCProcGen.Autoloads.WorldState.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})">
+  Initialize(List&lt;ActorTag2D&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Autoloads/WorldState.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the world state with the given list of actors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(List&lt;ActorTag2D&gt; actors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>&gt;</dt>
+    <dd><p>The list of actors to initialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

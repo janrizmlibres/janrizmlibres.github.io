@@ -1,0 +1,18 @@
+### YamlMime:ManagedReference
+apiRules:
+  - exclude:
+      uidRegex: "_Ready"
+  - exclude:
+      uidRegex: "_Process"
+  - exclude:
+      uidRegex: "_GetConfigurationWarnings"
+  - exclude:
+      uidRegex: "_EnterTree"
+  - exclude:
+      uidRegex: MethodName$
+  - exclude:
+      uidRegex: PropertyName$
+  - exclude:
+      uidRegex: SignalName$
+  - exclude:
+      uidRegex: ^GodotPlugins.Game

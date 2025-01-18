@@ -1,0 +1,363 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Utilities.Enums.Emote
+  commentId: T:EmergentEchoes.Utilities.Enums.Emote
+  id: Emote
+  parent: EmergentEchoes.Utilities.Enums
+  children:
+  - EmergentEchoes.Utilities.Enums.Emote.Circle
+  - EmergentEchoes.Utilities.Enums.Emote.Cross
+  - EmergentEchoes.Utilities.Enums.Emote.Dizzy
+  - EmergentEchoes.Utilities.Enums.Emote.Ellipsis
+  - EmergentEchoes.Utilities.Enums.Emote.Exclamation
+  - EmergentEchoes.Utilities.Enums.Emote.Hum
+  - EmergentEchoes.Utilities.Enums.Emote.Idea
+  - EmergentEchoes.Utilities.Enums.Emote.Interrobang
+  - EmergentEchoes.Utilities.Enums.Emote.Mark
+  - EmergentEchoes.Utilities.Enums.Emote.Query
+  - EmergentEchoes.Utilities.Enums.Emote.Sweat
+  langs:
+  - csharp
+  - vb
+  name: Emote
+  nameWithType: Emote
+  fullName: EmergentEchoes.Utilities.Enums.Emote
+  type: Enum
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Emote
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 2
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: public enum Emote
+    content.vb: Public Enum Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Circle
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Circle
+  id: Circle
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Circle
+  nameWithType: Emote.Circle
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Circle
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Circle
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 4
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Circle = 0
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Cross
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Cross
+  id: Cross
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Cross
+  nameWithType: Emote.Cross
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Cross
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Cross
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 5
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Cross = 1
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Dizzy
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Dizzy
+  id: Dizzy
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Dizzy
+  nameWithType: Emote.Dizzy
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Dizzy
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Dizzy
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 6
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Dizzy = 2
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Ellipsis
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Ellipsis
+  id: Ellipsis
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Ellipsis
+  nameWithType: Emote.Ellipsis
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Ellipsis
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Ellipsis
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 7
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Ellipsis = 3
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Exclamation
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Exclamation
+  id: Exclamation
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Exclamation
+  nameWithType: Emote.Exclamation
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Exclamation
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Exclamation
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 8
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Exclamation = 4
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Hum
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Hum
+  id: Hum
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Hum
+  nameWithType: Emote.Hum
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Hum
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Hum
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 9
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Hum = 5
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Idea
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Idea
+  id: Idea
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Idea
+  nameWithType: Emote.Idea
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Idea
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Idea
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 10
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Idea = 6
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Interrobang
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Interrobang
+  id: Interrobang
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Interrobang
+  nameWithType: Emote.Interrobang
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Interrobang
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Interrobang
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 11
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Interrobang = 7
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Mark
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Mark
+  id: Mark
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Mark
+  nameWithType: Emote.Mark
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Mark
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Mark
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 12
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Mark = 8
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Query
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Query
+  id: Query
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: Emote.Query
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Query
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Query
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 13
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Query = 9
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums.Emote.Sweat
+  commentId: F:EmergentEchoes.Utilities.Enums.Emote.Sweat
+  id: Sweat
+  parent: EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: Sweat
+  nameWithType: Emote.Sweat
+  fullName: EmergentEchoes.Utilities.Enums.Emote.Sweat
+  type: Field
+  source:
+    remote:
+      path: Utilities/Enums/Emote.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Sweat
+    path: ../Utilities/Enums/Emote.cs
+    startLine: 14
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Utilities.Enums
+  syntax:
+    content: Sweat = 10
+    return:
+      type: EmergentEchoes.Utilities.Enums.Emote
+references:
+- uid: EmergentEchoes.Utilities.Enums
+  commentId: N:EmergentEchoes.Utilities.Enums
+  href: EmergentEchoes.html
+  name: EmergentEchoes.Utilities.Enums
+  nameWithType: EmergentEchoes.Utilities.Enums
+  fullName: EmergentEchoes.Utilities.Enums
+  spec.csharp:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Utilities
+    name: Utilities
+    href: EmergentEchoes.Utilities.html
+  - name: .
+  - uid: EmergentEchoes.Utilities.Enums
+    name: Enums
+    href: EmergentEchoes.Utilities.Enums.html
+  spec.vb:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Utilities
+    name: Utilities
+    href: EmergentEchoes.Utilities.html
+  - name: .
+  - uid: EmergentEchoes.Utilities.Enums
+    name: Enums
+    href: EmergentEchoes.Utilities.Enums.html
+- uid: EmergentEchoes.Utilities.Enums.Emote
+  commentId: T:EmergentEchoes.Utilities.Enums.Emote
+  parent: EmergentEchoes.Utilities.Enums
+  href: EmergentEchoes.Utilities.Enums.Emote.html
+  name: Emote
+  nameWithType: Emote
+  fullName: EmergentEchoes.Utilities.Enums.Emote

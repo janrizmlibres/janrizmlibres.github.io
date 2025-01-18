@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  id: ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  children:
+  - NPCProcGen.Core.Components.Enums.ResourceType.Companionship
+  - NPCProcGen.Core.Components.Enums.ResourceType.Food
+  - NPCProcGen.Core.Components.Enums.ResourceType.Money
+  langs:
+  - csharp
+  - vb
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType
+  type: Enum
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: ResourceType
+    path: ../addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+    startLine: 5
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components.Enums
+  summary: Represents different types of resources.
+  example: []
+  syntax:
+    content: public enum ResourceType
+    content.vb: Public Enum ResourceType
+- uid: NPCProcGen.Core.Components.Enums.ResourceType.Money
+  commentId: F:NPCProcGen.Core.Components.Enums.ResourceType.Money
+  id: Money
+  parent: NPCProcGen.Core.Components.Enums.ResourceType
+  langs:
+  - csharp
+  - vb
+  name: Money
+  nameWithType: ResourceType.Money
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType.Money
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Money
+    path: ../addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+    startLine: 10
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components.Enums
+  summary: Represents money as a resource.
+  example: []
+  syntax:
+    content: Money = 0
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums.ResourceType.Food
+  commentId: F:NPCProcGen.Core.Components.Enums.ResourceType.Food
+  id: Food
+  parent: NPCProcGen.Core.Components.Enums.ResourceType
+  langs:
+  - csharp
+  - vb
+  name: Food
+  nameWithType: ResourceType.Food
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType.Food
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Food
+    path: ../addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+    startLine: 15
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components.Enums
+  summary: Represents food as a resource.
+  example: []
+  syntax:
+    content: Food = 1
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums.ResourceType.Companionship
+  commentId: F:NPCProcGen.Core.Components.Enums.ResourceType.Companionship
+  id: Companionship
+  parent: NPCProcGen.Core.Components.Enums.ResourceType
+  langs:
+  - csharp
+  - vb
+  name: Companionship
+  nameWithType: ResourceType.Companionship
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType.Companionship
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Companionship
+    path: ../addons/NPCProcGen/Core/Components/Enums/ResourceType.cs
+    startLine: 20
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components.Enums
+  summary: Represents companionship as a resource.
+  example: []
+  syntax:
+    content: Companionship = 2
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+references:
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType

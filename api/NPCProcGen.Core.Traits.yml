@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Traits
+  commentId: N:NPCProcGen.Core.Traits
+  id: NPCProcGen.Core.Traits
+  children:
+  - NPCProcGen.Core.Traits.LawfulTrait
+  - NPCProcGen.Core.Traits.SurvivalTrait
+  - NPCProcGen.Core.Traits.ThiefTrait
+  - NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Traits
+  nameWithType: NPCProcGen.Core.Traits
+  fullName: NPCProcGen.Core.Traits
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Traits.LawfulTrait
+  commentId: T:NPCProcGen.Core.Traits.LawfulTrait
+  href: NPCProcGen.Core.Traits.LawfulTrait.html
+  name: LawfulTrait
+  nameWithType: LawfulTrait
+  fullName: NPCProcGen.Core.Traits.LawfulTrait
+- uid: NPCProcGen.Core.Traits.SurvivalTrait
+  commentId: T:NPCProcGen.Core.Traits.SurvivalTrait
+  href: NPCProcGen.Core.Traits.SurvivalTrait.html
+  name: SurvivalTrait
+  nameWithType: SurvivalTrait
+  fullName: NPCProcGen.Core.Traits.SurvivalTrait
+- uid: NPCProcGen.Core.Traits.ThiefTrait
+  commentId: T:NPCProcGen.Core.Traits.ThiefTrait
+  href: NPCProcGen.Core.Traits.ThiefTrait.html
+  name: ThiefTrait
+  nameWithType: ThiefTrait
+  fullName: NPCProcGen.Core.Traits.ThiefTrait
+- uid: NPCProcGen.Core.Traits.Trait
+  commentId: T:NPCProcGen.Core.Traits.Trait
+  parent: NPCProcGen.Core.Traits
+  href: NPCProcGen.Core.Traits.Trait.html
+  name: Trait
+  nameWithType: Trait
+  fullName: NPCProcGen.Core.Traits.Trait
+- uid: NPCProcGen.Core.Traits
+  commentId: N:NPCProcGen.Core.Traits
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Traits
+  nameWithType: NPCProcGen.Core.Traits
+  fullName: NPCProcGen.Core.Traits
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Traits
+    name: Traits
+    href: NPCProcGen.Core.Traits.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Traits
+    name: Traits
+    href: NPCProcGen.Core.Traits.html

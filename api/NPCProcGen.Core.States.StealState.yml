@@ -1,0 +1,1086 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.States.StealState
+  commentId: T:NPCProcGen.Core.States.StealState
+  id: StealState
+  parent: NPCProcGen.Core.States
+  children:
+  - NPCProcGen.Core.States.StealState.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  - NPCProcGen.Core.States.StealState.CompleteState
+  - NPCProcGen.Core.States.StealState.ComputeStealAmount
+  - NPCProcGen.Core.States.StealState.Enter
+  - NPCProcGen.Core.States.StealState.Exit
+  - NPCProcGen.Core.States.StealState.GetResourceToSteal
+  - NPCProcGen.Core.States.StealState.GetTargetPosition
+  - NPCProcGen.Core.States.StealState.IsNavigating
+  - NPCProcGen.Core.States.StealState.OnNavigationComplete
+  - NPCProcGen.Core.States.StealState._amountToSteal
+  - NPCProcGen.Core.States.StealState._isTargetReached
+  - NPCProcGen.Core.States.StealState._target
+  - NPCProcGen.Core.States.StealState._targetResType
+  langs:
+  - csharp
+  - vb
+  name: StealState
+  nameWithType: StealState
+  fullName: NPCProcGen.Core.States.StealState
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: StealState
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 13
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Represents the state where an NPC agent attempts to steal resources.
+  example: []
+  syntax:
+    content: 'public class StealState : BaseState, INavigationState'
+    content.vb: Public Class StealState Inherits BaseState Implements INavigationState
+  inheritance:
+  - System.Object
+  - NPCProcGen.Core.States.BaseState
+  implements:
+  - NPCProcGen.Core.States.INavigationState
+  inheritedMembers:
+  - NPCProcGen.Core.States.BaseState._owner
+  - NPCProcGen.Core.States.BaseState.Update(System.Double)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.States.StealState._target
+  commentId: F:NPCProcGen.Core.States.StealState._target
+  id: _target
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: _target
+  nameWithType: StealState._target
+  fullName: NPCProcGen.Core.States.StealState._target
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _target
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 15
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private readonly ActorTag2D _target
+    return:
+      type: NPCProcGen.ActorTag2D
+    content.vb: Private ReadOnly _target As ActorTag2D
+- uid: NPCProcGen.Core.States.StealState._targetResType
+  commentId: F:NPCProcGen.Core.States.StealState._targetResType
+  id: _targetResType
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: _targetResType
+  nameWithType: StealState._targetResType
+  fullName: NPCProcGen.Core.States.StealState._targetResType
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _targetResType
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 16
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private readonly ResourceType _targetResType
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+    content.vb: Private ReadOnly _targetResType As ResourceType
+- uid: NPCProcGen.Core.States.StealState._isTargetReached
+  commentId: F:NPCProcGen.Core.States.StealState._isTargetReached
+  id: _isTargetReached
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: _isTargetReached
+  nameWithType: StealState._isTargetReached
+  fullName: NPCProcGen.Core.States.StealState._isTargetReached
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _isTargetReached
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 18
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private bool _isTargetReached
+    return:
+      type: System.Boolean
+    content.vb: Private _isTargetReached As Boolean
+- uid: NPCProcGen.Core.States.StealState._amountToSteal
+  commentId: F:NPCProcGen.Core.States.StealState._amountToSteal
+  id: _amountToSteal
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: _amountToSteal
+  nameWithType: StealState._amountToSteal
+  fullName: NPCProcGen.Core.States.StealState._amountToSteal
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _amountToSteal
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 19
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private float _amountToSteal
+    return:
+      type: System.Single
+    content.vb: Private _amountToSteal As Single
+- uid: NPCProcGen.Core.States.StealState.CompleteState
+  commentId: E:NPCProcGen.Core.States.StealState.CompleteState
+  id: CompleteState
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: CompleteState
+  nameWithType: StealState.CompleteState
+  fullName: NPCProcGen.Core.States.StealState.CompleteState
+  type: Event
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: CompleteState
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 24
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Event triggered when the state is completed.
+  example: []
+  syntax:
+    content: public event Action CompleteState
+    return:
+      type: System.Action
+    content.vb: Public Event CompleteState As Action
+- uid: NPCProcGen.Core.States.StealState.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  commentId: M:NPCProcGen.Core.States.StealState.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  id: '#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)'
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: StealState(NPCAgent2D, ActorTag2D, ResourceType)
+  nameWithType: StealState.StealState(NPCAgent2D, ActorTag2D, ResourceType)
+  fullName: NPCProcGen.Core.States.StealState.StealState(NPCProcGen.NPCAgent2D, NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.Enums.ResourceType)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 32
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.States.StealState" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public StealState(NPCAgent2D owner, ActorTag2D target, ResourceType type)
+    parameters:
+    - id: owner
+      type: NPCProcGen.NPCAgent2D
+      description: The NPC agent owning this state.
+    - id: target
+      type: NPCProcGen.ActorTag2D
+      description: The target actor to steal from.
+    - id: type
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+      description: The type of resource to steal.
+    content.vb: Public Sub New(owner As NPCAgent2D, target As ActorTag2D, type As ResourceType)
+  overload: NPCProcGen.Core.States.StealState.#ctor*
+  nameWithType.vb: StealState.New(NPCAgent2D, ActorTag2D, ResourceType)
+  fullName.vb: NPCProcGen.Core.States.StealState.New(NPCProcGen.NPCAgent2D, NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.Enums.ResourceType)
+  name.vb: New(NPCAgent2D, ActorTag2D, ResourceType)
+- uid: NPCProcGen.Core.States.StealState.Enter
+  commentId: M:NPCProcGen.Core.States.StealState.Enter
+  id: Enter
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: Enter()
+  nameWithType: StealState.Enter()
+  fullName: NPCProcGen.Core.States.StealState.Enter()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Enter
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 42
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Called when the state is entered.
+  example: []
+  syntax:
+    content: public override void Enter()
+    content.vb: Public Overrides Sub Enter()
+  overridden: NPCProcGen.Core.States.BaseState.Enter
+  overload: NPCProcGen.Core.States.StealState.Enter*
+- uid: NPCProcGen.Core.States.StealState.Exit
+  commentId: M:NPCProcGen.Core.States.StealState.Exit
+  id: Exit
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: StealState.Exit()
+  fullName: NPCProcGen.Core.States.StealState.Exit()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Exit
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 52
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Called when the state is exited.
+  example: []
+  syntax:
+    content: public override void Exit()
+    content.vb: Public Overrides Sub [Exit]()
+  overridden: NPCProcGen.Core.States.BaseState.Exit
+  overload: NPCProcGen.Core.States.StealState.Exit*
+- uid: NPCProcGen.Core.States.StealState.GetTargetPosition
+  commentId: M:NPCProcGen.Core.States.StealState.GetTargetPosition
+  id: GetTargetPosition
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: GetTargetPosition()
+  nameWithType: StealState.GetTargetPosition()
+  fullName: NPCProcGen.Core.States.StealState.GetTargetPosition()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetTargetPosition
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 62
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Gets the target position for navigation.
+  example: []
+  syntax:
+    content: public Vector2 GetTargetPosition()
+    return:
+      type: Godot.Vector2
+      description: The global position of the target.
+    content.vb: Public Function GetTargetPosition() As Vector2
+  overload: NPCProcGen.Core.States.StealState.GetTargetPosition*
+  implements:
+  - NPCProcGen.Core.States.INavigationState.GetTargetPosition
+- uid: NPCProcGen.Core.States.StealState.GetResourceToSteal
+  commentId: M:NPCProcGen.Core.States.StealState.GetResourceToSteal
+  id: GetResourceToSteal
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: GetResourceToSteal()
+  nameWithType: StealState.GetResourceToSteal()
+  fullName: NPCProcGen.Core.States.StealState.GetResourceToSteal()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetResourceToSteal
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 71
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Gets the resource type and amount to steal.
+  example: []
+  syntax:
+    content: public Tuple<ResourceType, float> GetResourceToSteal()
+    return:
+      type: System.Tuple{NPCProcGen.Core.Components.Enums.ResourceType,System.Single}
+      description: A tuple containing the resource type and amount to steal.
+    content.vb: Public Function GetResourceToSteal() As Tuple(Of ResourceType, Single)
+  overload: NPCProcGen.Core.States.StealState.GetResourceToSteal*
+- uid: NPCProcGen.Core.States.StealState.IsNavigating
+  commentId: M:NPCProcGen.Core.States.StealState.IsNavigating
+  id: IsNavigating
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: IsNavigating()
+  nameWithType: StealState.IsNavigating()
+  fullName: NPCProcGen.Core.States.StealState.IsNavigating()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsNavigating
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 80
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Determines whether the agent is currently navigating.
+  example: []
+  syntax:
+    content: public bool IsNavigating()
+    return:
+      type: System.Boolean
+      description: True if the agent is navigating; otherwise, false.
+    content.vb: Public Function IsNavigating() As Boolean
+  overload: NPCProcGen.Core.States.StealState.IsNavigating*
+  implements:
+  - NPCProcGen.Core.States.INavigationState.IsNavigating
+- uid: NPCProcGen.Core.States.StealState.OnNavigationComplete
+  commentId: M:NPCProcGen.Core.States.StealState.OnNavigationComplete
+  id: OnNavigationComplete
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationComplete()
+  nameWithType: StealState.OnNavigationComplete()
+  fullName: NPCProcGen.Core.States.StealState.OnNavigationComplete()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: OnNavigationComplete
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 85
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private void OnNavigationComplete()
+    content.vb: Private Sub OnNavigationComplete()
+  overload: NPCProcGen.Core.States.StealState.OnNavigationComplete*
+- uid: NPCProcGen.Core.States.StealState.ComputeStealAmount
+  commentId: M:NPCProcGen.Core.States.StealState.ComputeStealAmount
+  id: ComputeStealAmount
+  parent: NPCProcGen.Core.States.StealState
+  langs:
+  - csharp
+  - vb
+  name: ComputeStealAmount()
+  nameWithType: StealState.ComputeStealAmount()
+  fullName: NPCProcGen.Core.States.StealState.ComputeStealAmount()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/StealState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: ComputeStealAmount
+    path: ../addons/NPCProcGen/Core/States/StealState.cs
+    startLine: 103
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private float ComputeStealAmount()
+    return:
+      type: System.Single
+    content.vb: Private Function ComputeStealAmount() As Single
+  overload: NPCProcGen.Core.States.StealState.ComputeStealAmount*
+references:
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NPCProcGen.Core.States.BaseState
+  commentId: T:NPCProcGen.Core.States.BaseState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.BaseState.html
+  name: BaseState
+  nameWithType: BaseState
+  fullName: NPCProcGen.Core.States.BaseState
+- uid: NPCProcGen.Core.States.INavigationState
+  commentId: T:NPCProcGen.Core.States.INavigationState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.INavigationState.html
+  name: INavigationState
+  nameWithType: INavigationState
+  fullName: NPCProcGen.Core.States.INavigationState
+- uid: NPCProcGen.Core.States.BaseState._owner
+  commentId: F:NPCProcGen.Core.States.BaseState._owner
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState__owner
+  name: _owner
+  nameWithType: BaseState._owner
+  fullName: NPCProcGen.Core.States.BaseState._owner
+- uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+  commentId: M:NPCProcGen.Core.States.BaseState.Update(System.Double)
+  parent: NPCProcGen.Core.States.BaseState
+  isExternal: true
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  name: Update(double)
+  nameWithType: BaseState.Update(double)
+  fullName: NPCProcGen.Core.States.BaseState.Update(double)
+  nameWithType.vb: BaseState.Update(Double)
+  fullName.vb: NPCProcGen.Core.States.BaseState.Update(Double)
+  name.vb: Update(Double)
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.ActorTag2D
+  commentId: T:NPCProcGen.ActorTag2D
+  parent: NPCProcGen
+  href: NPCProcGen.ActorTag2D.html
+  name: ActorTag2D
+  nameWithType: ActorTag2D
+  fullName: NPCProcGen.ActorTag2D
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: NPCProcGen.Core.States.StealState
+  commentId: T:NPCProcGen.Core.States.StealState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.StealState.html
+  name: StealState
+  nameWithType: StealState
+  fullName: NPCProcGen.Core.States.StealState
+- uid: NPCProcGen.Core.States.StealState.#ctor*
+  commentId: Overload:NPCProcGen.Core.States.StealState.#ctor
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState__ctor_NPCProcGen_NPCAgent2D_NPCProcGen_ActorTag2D_NPCProcGen_Core_Components_Enums_ResourceType_
+  name: StealState
+  nameWithType: StealState.StealState
+  fullName: NPCProcGen.Core.States.StealState.StealState
+  nameWithType.vb: StealState.New
+  fullName.vb: NPCProcGen.Core.States.StealState.New
+  name.vb: New
+- uid: NPCProcGen.NPCAgent2D
+  commentId: T:NPCProcGen.NPCAgent2D
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D
+  nameWithType: NPCAgent2D
+  fullName: NPCProcGen.NPCAgent2D
+- uid: NPCProcGen.Core.States.BaseState.Enter
+  commentId: M:NPCProcGen.Core.States.BaseState.Enter
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  name: Enter()
+  nameWithType: BaseState.Enter()
+  fullName: NPCProcGen.Core.States.BaseState.Enter()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Enter
+    name: Enter
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Enter
+    name: Enter
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.StealState.Enter*
+  commentId: Overload:NPCProcGen.Core.States.StealState.Enter
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_Enter
+  name: Enter
+  nameWithType: StealState.Enter
+  fullName: NPCProcGen.Core.States.StealState.Enter
+- uid: NPCProcGen.Core.States.BaseState.Exit
+  commentId: M:NPCProcGen.Core.States.BaseState.Exit
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  name: Exit()
+  nameWithType: BaseState.Exit()
+  fullName: NPCProcGen.Core.States.BaseState.Exit()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Exit
+    name: Exit
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Exit
+    name: Exit
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.StealState.Exit*
+  commentId: Overload:NPCProcGen.Core.States.StealState.Exit
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_Exit
+  name: Exit
+  nameWithType: StealState.Exit
+  fullName: NPCProcGen.Core.States.StealState.Exit
+- uid: NPCProcGen.Core.States.StealState.GetTargetPosition*
+  commentId: Overload:NPCProcGen.Core.States.StealState.GetTargetPosition
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_GetTargetPosition
+  name: GetTargetPosition
+  nameWithType: StealState.GetTargetPosition
+  fullName: NPCProcGen.Core.States.StealState.GetTargetPosition
+- uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  commentId: M:NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  parent: NPCProcGen.Core.States.INavigationState
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  name: GetTargetPosition()
+  nameWithType: INavigationState.GetTargetPosition()
+  fullName: NPCProcGen.Core.States.INavigationState.GetTargetPosition()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  - name: (
+  - name: )
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: NPCProcGen.Core.States.StealState.GetResourceToSteal*
+  commentId: Overload:NPCProcGen.Core.States.StealState.GetResourceToSteal
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_GetResourceToSteal
+  name: GetResourceToSteal
+  nameWithType: StealState.GetResourceToSteal
+  fullName: NPCProcGen.Core.States.StealState.GetResourceToSteal
+- uid: System.Tuple{NPCProcGen.Core.Components.Enums.ResourceType,System.Single}
+  commentId: T:System.Tuple{NPCProcGen.Core.Components.Enums.ResourceType,System.Single}
+  parent: System
+  definition: System.Tuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<ResourceType, float>
+  nameWithType: Tuple<ResourceType, float>
+  fullName: System.Tuple<NPCProcGen.Core.Components.Enums.ResourceType, float>
+  nameWithType.vb: Tuple(Of ResourceType, Single)
+  fullName.vb: System.Tuple(Of NPCProcGen.Core.Components.Enums.ResourceType, Single)
+  name.vb: Tuple(Of ResourceType, Single)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: NPCProcGen.Core.Components.Enums.ResourceType
+    name: ResourceType
+    href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.Core.Components.Enums.ResourceType
+    name: ResourceType
+    href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Tuple`2
+  commentId: T:System.Tuple`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<T1, T2>
+  nameWithType: Tuple<T1, T2>
+  fullName: System.Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+  fullName.vb: System.Tuple(Of T1, T2)
+  name.vb: Tuple(Of T1, T2)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: NPCProcGen.Core.States.StealState.IsNavigating*
+  commentId: Overload:NPCProcGen.Core.States.StealState.IsNavigating
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_IsNavigating
+  name: IsNavigating
+  nameWithType: StealState.IsNavigating
+  fullName: NPCProcGen.Core.States.StealState.IsNavigating
+- uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+  commentId: M:NPCProcGen.Core.States.INavigationState.IsNavigating
+  parent: NPCProcGen.Core.States.INavigationState
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  name: IsNavigating()
+  nameWithType: INavigationState.IsNavigating()
+  fullName: NPCProcGen.Core.States.INavigationState.IsNavigating()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.StealState.OnNavigationComplete*
+  commentId: Overload:NPCProcGen.Core.States.StealState.OnNavigationComplete
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_OnNavigationComplete
+  name: OnNavigationComplete
+  nameWithType: StealState.OnNavigationComplete
+  fullName: NPCProcGen.Core.States.StealState.OnNavigationComplete
+- uid: NPCProcGen.Core.States.StealState.ComputeStealAmount*
+  commentId: Overload:NPCProcGen.Core.States.StealState.ComputeStealAmount
+  href: NPCProcGen.Core.States.StealState.html#NPCProcGen_Core_States_StealState_ComputeStealAmount
+  name: ComputeStealAmount
+  nameWithType: StealState.ComputeStealAmount
+  fullName: NPCProcGen.Core.States.StealState.ComputeStealAmount

@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Helpers
+  commentId: N:NPCProcGen.Core.Helpers
+  id: NPCProcGen.Core.Helpers
+  children:
+  - NPCProcGen.Core.Helpers.CommonUtils
+  - NPCProcGen.Core.Helpers.DebugTool
+  - NPCProcGen.Core.Helpers.NotifManager
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Helpers
+  nameWithType: NPCProcGen.Core.Helpers
+  fullName: NPCProcGen.Core.Helpers
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Helpers.CommonUtils
+  commentId: T:NPCProcGen.Core.Helpers.CommonUtils
+  href: NPCProcGen.Core.Helpers.CommonUtils.html
+  name: CommonUtils
+  nameWithType: CommonUtils
+  fullName: NPCProcGen.Core.Helpers.CommonUtils
+- uid: NPCProcGen.Core.Helpers.DebugTool
+  commentId: T:NPCProcGen.Core.Helpers.DebugTool
+  href: NPCProcGen.Core.Helpers.DebugTool.html
+  name: DebugTool
+  nameWithType: DebugTool
+  fullName: NPCProcGen.Core.Helpers.DebugTool
+- uid: NPCProcGen.Core.Helpers.NotifManager
+  commentId: T:NPCProcGen.Core.Helpers.NotifManager
+  parent: NPCProcGen.Core.Helpers
+  href: NPCProcGen.Core.Helpers.NotifManager.html
+  name: NotifManager
+  nameWithType: NotifManager
+  fullName: NPCProcGen.Core.Helpers.NotifManager
+- uid: NPCProcGen.Core.Helpers
+  commentId: N:NPCProcGen.Core.Helpers
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Helpers
+  nameWithType: NPCProcGen.Core.Helpers
+  fullName: NPCProcGen.Core.Helpers
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Helpers
+    name: Helpers
+    href: NPCProcGen.Core.Helpers.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Helpers
+    name: Helpers
+    href: NPCProcGen.Core.Helpers.html

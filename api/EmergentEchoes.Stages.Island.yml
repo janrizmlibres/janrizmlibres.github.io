@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Stages.Island
+  commentId: N:EmergentEchoes.Stages.Island
+  id: EmergentEchoes.Stages.Island
+  children:
+  - EmergentEchoes.Stages.Island.World
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Stages.Island
+  nameWithType: EmergentEchoes.Stages.Island
+  fullName: EmergentEchoes.Stages.Island
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Stages.Island.World
+  commentId: T:EmergentEchoes.Stages.Island.World
+  href: EmergentEchoes.Stages.Island.World.html
+  name: World
+  nameWithType: World
+  fullName: EmergentEchoes.Stages.Island.World

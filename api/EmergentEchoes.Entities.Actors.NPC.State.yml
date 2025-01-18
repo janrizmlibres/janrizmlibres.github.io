@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Entities.Actors.NPC.State
+  commentId: T:EmergentEchoes.Entities.Actors.NPC.State
+  id: NPC.State
+  parent: EmergentEchoes.Entities.Actors
+  children:
+  - EmergentEchoes.Entities.Actors.NPC.State.Idle
+  - EmergentEchoes.Entities.Actors.NPC.State.Wander
+  langs:
+  - csharp
+  - vb
+  name: NPC.State
+  nameWithType: NPC.State
+  fullName: EmergentEchoes.Entities.Actors.NPC.State
+  type: Enum
+  source:
+    remote:
+      path: Entities/Actors/NPCs/NPC.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: State
+    path: ../Entities/Actors/NPCs/NPC.cs
+    startLine: 19
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Entities.Actors
+  syntax:
+    content: private enum NPC.State
+    content.vb: Private Enum NPC.State
+- uid: EmergentEchoes.Entities.Actors.NPC.State.Idle
+  commentId: F:EmergentEchoes.Entities.Actors.NPC.State.Idle
+  id: Idle
+  parent: EmergentEchoes.Entities.Actors.NPC.State
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: NPC.State.Idle
+  fullName: EmergentEchoes.Entities.Actors.NPC.State.Idle
+  type: Field
+  source:
+    remote:
+      path: Entities/Actors/NPCs/NPC.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Idle
+    path: ../Entities/Actors/NPCs/NPC.cs
+    startLine: 19
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Entities.Actors
+  syntax:
+    content: Idle = 0
+    return:
+      type: EmergentEchoes.Entities.Actors.NPC.State
+- uid: EmergentEchoes.Entities.Actors.NPC.State.Wander
+  commentId: F:EmergentEchoes.Entities.Actors.NPC.State.Wander
+  id: Wander
+  parent: EmergentEchoes.Entities.Actors.NPC.State
+  langs:
+  - csharp
+  - vb
+  name: Wander
+  nameWithType: NPC.State.Wander
+  fullName: EmergentEchoes.Entities.Actors.NPC.State.Wander
+  type: Field
+  source:
+    remote:
+      path: Entities/Actors/NPCs/NPC.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Wander
+    path: ../Entities/Actors/NPCs/NPC.cs
+    startLine: 19
+  assemblies:
+  - EmergentEchoes
+  namespace: EmergentEchoes.Entities.Actors
+  syntax:
+    content: Wander = 1
+    return:
+      type: EmergentEchoes.Entities.Actors.NPC.State
+references:
+- uid: EmergentEchoes.Entities.Actors
+  commentId: N:EmergentEchoes.Entities.Actors
+  href: EmergentEchoes.html
+  name: EmergentEchoes.Entities.Actors
+  nameWithType: EmergentEchoes.Entities.Actors
+  fullName: EmergentEchoes.Entities.Actors
+  spec.csharp:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Entities
+    name: Entities
+    href: EmergentEchoes.Entities.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors
+    name: Actors
+    href: EmergentEchoes.Entities.Actors.html
+  spec.vb:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Entities
+    name: Entities
+    href: EmergentEchoes.Entities.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors
+    name: Actors
+    href: EmergentEchoes.Entities.Actors.html
+- uid: EmergentEchoes.Entities.Actors.NPC.State
+  commentId: T:EmergentEchoes.Entities.Actors.NPC.State
+  parent: EmergentEchoes.Entities.Actors
+  href: EmergentEchoes.Entities.Actors.NPC.html
+  name: NPC.State
+  nameWithType: NPC.State
+  fullName: EmergentEchoes.Entities.Actors.NPC.State
+  spec.csharp:
+  - uid: EmergentEchoes.Entities.Actors.NPC
+    name: NPC
+    href: EmergentEchoes.Entities.Actors.NPC.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors.NPC.State
+    name: State
+    href: EmergentEchoes.Entities.Actors.NPC.State.html
+  spec.vb:
+  - uid: EmergentEchoes.Entities.Actors.NPC
+    name: NPC
+    href: EmergentEchoes.Entities.Actors.NPC.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors.NPC.State
+    name: State
+    href: EmergentEchoes.Entities.Actors.NPC.State.html

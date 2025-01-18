@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  id: NPCProcGen
+  children:
+  - NPCProcGen.ActorTag2D
+  - NPCProcGen.NPCAgent2D
+  - NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  - NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+  - NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+  - NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+  - NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.ActorTag2D
+  commentId: T:NPCProcGen.ActorTag2D
+  parent: NPCProcGen
+  href: NPCProcGen.ActorTag2D.html
+  name: ActorTag2D
+  nameWithType: ActorTag2D
+  fullName: NPCProcGen.ActorTag2D
+- uid: NPCProcGen.NPCAgent2D
+  commentId: T:NPCProcGen.NPCAgent2D
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D
+  nameWithType: NPCAgent2D
+  fullName: NPCProcGen.NPCAgent2D
+- uid: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D.ExecutionStartedEventHandler
+  nameWithType: NPCAgent2D.ExecutionStartedEventHandler
+  fullName: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+  spec.csharp:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+    name: ExecutionStartedEventHandler
+    href: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.html
+  spec.vb:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+    name: ExecutionStartedEventHandler
+    href: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.html
+- uid: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D.ExecutionEndedEventHandler
+  nameWithType: NPCAgent2D.ExecutionEndedEventHandler
+  fullName: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+  spec.csharp:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+    name: ExecutionEndedEventHandler
+    href: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.html
+  spec.vb:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+    name: ExecutionEndedEventHandler
+    href: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.html
+- uid: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D.ActionStateEnteredEventHandler
+  nameWithType: NPCAgent2D.ActionStateEnteredEventHandler
+  fullName: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  spec.csharp:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+    name: ActionStateEnteredEventHandler
+    href: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.html
+  spec.vb:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+    name: ActionStateEnteredEventHandler
+    href: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.html
+- uid: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D.ActionStateExitedEventHandler
+  nameWithType: NPCAgent2D.ActionStateExitedEventHandler
+  fullName: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+  spec.csharp:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+    name: ActionStateExitedEventHandler
+    href: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.html
+  spec.vb:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+    name: ActionStateExitedEventHandler
+    href: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.html
+- uid: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D.TheftCompletedEventHandler
+  nameWithType: NPCAgent2D.TheftCompletedEventHandler
+  fullName: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  spec.csharp:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+    name: TheftCompletedEventHandler
+    href: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.html
+  spec.vb:
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    href: NPCProcGen.NPCAgent2D.html
+  - name: .
+  - uid: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+    name: TheftCompletedEventHandler
+    href: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.html
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen

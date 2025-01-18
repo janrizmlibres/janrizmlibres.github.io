@@ -1,0 +1,1043 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.States.MoveState
+  commentId: T:NPCProcGen.Core.States.MoveState
+  id: MoveState
+  parent: NPCProcGen.Core.States
+  children:
+  - NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Node2D,System.Nullable{Godot.Vector2})
+  - NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Vector2)
+  - NPCProcGen.Core.States.MoveState.CompleteState
+  - NPCProcGen.Core.States.MoveState.Enter
+  - NPCProcGen.Core.States.MoveState.Exit
+  - NPCProcGen.Core.States.MoveState.GetTargetPosition
+  - NPCProcGen.Core.States.MoveState.IsNavigating
+  - NPCProcGen.Core.States.MoveState.OnActorDetected(NPCProcGen.ActorTag2D)
+  - NPCProcGen.Core.States.MoveState.OnCompleteState(System.Boolean)
+  - NPCProcGen.Core.States.MoveState.OnNavigationComplete
+  - NPCProcGen.Core.States.MoveState._target
+  - NPCProcGen.Core.States.MoveState._targetPosition
+  langs:
+  - csharp
+  - vb
+  name: MoveState
+  nameWithType: MoveState
+  fullName: NPCProcGen.Core.States.MoveState
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: MoveState
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 9
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Represents the state where an NPC agent moves to a target position.
+  example: []
+  syntax:
+    content: 'public class MoveState : BaseState, INavigationState'
+    content.vb: Public Class MoveState Inherits BaseState Implements INavigationState
+  inheritance:
+  - System.Object
+  - NPCProcGen.Core.States.BaseState
+  implements:
+  - NPCProcGen.Core.States.INavigationState
+  inheritedMembers:
+  - NPCProcGen.Core.States.BaseState._owner
+  - NPCProcGen.Core.States.BaseState.Update(System.Double)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.States.MoveState._target
+  commentId: F:NPCProcGen.Core.States.MoveState._target
+  id: _target
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: _target
+  nameWithType: MoveState._target
+  fullName: NPCProcGen.Core.States.MoveState._target
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _target
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 11
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private readonly Node2D _target
+    return:
+      type: Godot.Node2D
+    content.vb: Private ReadOnly _target As Node2D
+- uid: NPCProcGen.Core.States.MoveState._targetPosition
+  commentId: F:NPCProcGen.Core.States.MoveState._targetPosition
+  id: _targetPosition
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: _targetPosition
+  nameWithType: MoveState._targetPosition
+  fullName: NPCProcGen.Core.States.MoveState._targetPosition
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _targetPosition
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 12
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private Vector2? _targetPosition
+    return:
+      type: System.Nullable{Godot.Vector2}
+    content.vb: Private _targetPosition As Vector2?
+- uid: NPCProcGen.Core.States.MoveState.CompleteState
+  commentId: E:NPCProcGen.Core.States.MoveState.CompleteState
+  id: CompleteState
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: CompleteState
+  nameWithType: MoveState.CompleteState
+  fullName: NPCProcGen.Core.States.MoveState.CompleteState
+  type: Event
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: CompleteState
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 17
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Event triggered when the state is completed.
+  example: []
+  syntax:
+    content: public event Action<bool> CompleteState
+    return:
+      type: System.Action{System.Boolean}
+    content.vb: Public Event CompleteState As Action(Of Boolean)
+- uid: NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Node2D,System.Nullable{Godot.Vector2})
+  commentId: M:NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Node2D,System.Nullable{Godot.Vector2})
+  id: '#ctor(NPCProcGen.NPCAgent2D,Godot.Node2D,System.Nullable{Godot.Vector2})'
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: MoveState(NPCAgent2D, Node2D, Vector2?)
+  nameWithType: MoveState.MoveState(NPCAgent2D, Node2D, Vector2?)
+  fullName: NPCProcGen.Core.States.MoveState.MoveState(NPCProcGen.NPCAgent2D, Godot.Node2D, Godot.Vector2?)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 25
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.States.MoveState" data-throw-if-not-resolved="false"></xref> class with a target node.
+  example: []
+  syntax:
+    content: public MoveState(NPCAgent2D owner, Node2D target, Vector2? lastPos = null)
+    parameters:
+    - id: owner
+      type: NPCProcGen.NPCAgent2D
+      description: The NPC agent owning this state.
+    - id: target
+      type: Godot.Node2D
+      description: The target node to move to.
+    - id: lastPos
+      type: System.Nullable{Godot.Vector2}
+      description: The last known position of the target.
+    content.vb: Public Sub New(owner As NPCAgent2D, target As Node2D, lastPos As Vector2? = Nothing)
+  overload: NPCProcGen.Core.States.MoveState.#ctor*
+  nameWithType.vb: MoveState.New(NPCAgent2D, Node2D, Vector2?)
+  fullName.vb: NPCProcGen.Core.States.MoveState.New(NPCProcGen.NPCAgent2D, Godot.Node2D, Godot.Vector2?)
+  name.vb: New(NPCAgent2D, Node2D, Vector2?)
+- uid: NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Vector2)
+  commentId: M:NPCProcGen.Core.States.MoveState.#ctor(NPCProcGen.NPCAgent2D,Godot.Vector2)
+  id: '#ctor(NPCProcGen.NPCAgent2D,Godot.Vector2)'
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: MoveState(NPCAgent2D, Vector2)
+  nameWithType: MoveState.MoveState(NPCAgent2D, Vector2)
+  fullName: NPCProcGen.Core.States.MoveState.MoveState(NPCProcGen.NPCAgent2D, Godot.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 37
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.States.MoveState" data-throw-if-not-resolved="false"></xref> class with a target position.
+  example: []
+  syntax:
+    content: public MoveState(NPCAgent2D owner, Vector2 targetPosition)
+    parameters:
+    - id: owner
+      type: NPCProcGen.NPCAgent2D
+      description: The NPC agent owning this state.
+    - id: targetPosition
+      type: Godot.Vector2
+      description: The target position to move to.
+    content.vb: Public Sub New(owner As NPCAgent2D, targetPosition As Vector2)
+  overload: NPCProcGen.Core.States.MoveState.#ctor*
+  nameWithType.vb: MoveState.New(NPCAgent2D, Vector2)
+  fullName.vb: NPCProcGen.Core.States.MoveState.New(NPCProcGen.NPCAgent2D, Godot.Vector2)
+  name.vb: New(NPCAgent2D, Vector2)
+- uid: NPCProcGen.Core.States.MoveState.Enter
+  commentId: M:NPCProcGen.Core.States.MoveState.Enter
+  id: Enter
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: Enter()
+  nameWithType: MoveState.Enter()
+  fullName: NPCProcGen.Core.States.MoveState.Enter()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Enter
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 46
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Called when the state is entered.
+  example: []
+  syntax:
+    content: public override void Enter()
+    content.vb: Public Overrides Sub Enter()
+  overridden: NPCProcGen.Core.States.BaseState.Enter
+  overload: NPCProcGen.Core.States.MoveState.Enter*
+- uid: NPCProcGen.Core.States.MoveState.Exit
+  commentId: M:NPCProcGen.Core.States.MoveState.Exit
+  id: Exit
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: MoveState.Exit()
+  fullName: NPCProcGen.Core.States.MoveState.Exit()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Exit
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 57
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Called when the state is exited.
+  example: []
+  syntax:
+    content: public override void Exit()
+    content.vb: Public Overrides Sub [Exit]()
+  overridden: NPCProcGen.Core.States.BaseState.Exit
+  overload: NPCProcGen.Core.States.MoveState.Exit*
+- uid: NPCProcGen.Core.States.MoveState.IsNavigating
+  commentId: M:NPCProcGen.Core.States.MoveState.IsNavigating
+  id: IsNavigating
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: IsNavigating()
+  nameWithType: MoveState.IsNavigating()
+  fullName: NPCProcGen.Core.States.MoveState.IsNavigating()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsNavigating
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 68
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Determines whether the agent is currently navigating.
+  example: []
+  syntax:
+    content: public bool IsNavigating()
+    return:
+      type: System.Boolean
+      description: True if the agent is navigating; otherwise, false.
+    content.vb: Public Function IsNavigating() As Boolean
+  overload: NPCProcGen.Core.States.MoveState.IsNavigating*
+  implements:
+  - NPCProcGen.Core.States.INavigationState.IsNavigating
+- uid: NPCProcGen.Core.States.MoveState.GetTargetPosition
+  commentId: M:NPCProcGen.Core.States.MoveState.GetTargetPosition
+  id: GetTargetPosition
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: GetTargetPosition()
+  nameWithType: MoveState.GetTargetPosition()
+  fullName: NPCProcGen.Core.States.MoveState.GetTargetPosition()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetTargetPosition
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 77
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Gets the target position for navigation.
+  example: []
+  syntax:
+    content: public Vector2 GetTargetPosition()
+    return:
+      type: Godot.Vector2
+      description: The global position of the target.
+    content.vb: Public Function GetTargetPosition() As Vector2
+  overload: NPCProcGen.Core.States.MoveState.GetTargetPosition*
+  implements:
+  - NPCProcGen.Core.States.INavigationState.GetTargetPosition
+- uid: NPCProcGen.Core.States.MoveState.OnNavigationComplete
+  commentId: M:NPCProcGen.Core.States.MoveState.OnNavigationComplete
+  id: OnNavigationComplete
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationComplete()
+  nameWithType: MoveState.OnNavigationComplete()
+  fullName: NPCProcGen.Core.States.MoveState.OnNavigationComplete()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: OnNavigationComplete
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 82
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private void OnNavigationComplete()
+    content.vb: Private Sub OnNavigationComplete()
+  overload: NPCProcGen.Core.States.MoveState.OnNavigationComplete*
+- uid: NPCProcGen.Core.States.MoveState.OnActorDetected(NPCProcGen.ActorTag2D)
+  commentId: M:NPCProcGen.Core.States.MoveState.OnActorDetected(NPCProcGen.ActorTag2D)
+  id: OnActorDetected(NPCProcGen.ActorTag2D)
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: OnActorDetected(ActorTag2D)
+  nameWithType: MoveState.OnActorDetected(ActorTag2D)
+  fullName: NPCProcGen.Core.States.MoveState.OnActorDetected(NPCProcGen.ActorTag2D)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: OnActorDetected
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 87
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private void OnActorDetected(ActorTag2D target)
+    parameters:
+    - id: target
+      type: NPCProcGen.ActorTag2D
+    content.vb: Private Sub OnActorDetected(target As ActorTag2D)
+  overload: NPCProcGen.Core.States.MoveState.OnActorDetected*
+- uid: NPCProcGen.Core.States.MoveState.OnCompleteState(System.Boolean)
+  commentId: M:NPCProcGen.Core.States.MoveState.OnCompleteState(System.Boolean)
+  id: OnCompleteState(System.Boolean)
+  parent: NPCProcGen.Core.States.MoveState
+  langs:
+  - csharp
+  - vb
+  name: OnCompleteState(bool)
+  nameWithType: MoveState.OnCompleteState(bool)
+  fullName: NPCProcGen.Core.States.MoveState.OnCompleteState(bool)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/MoveState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: OnCompleteState
+    path: ../addons/NPCProcGen/Core/States/MoveState.cs
+    startLine: 95
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  syntax:
+    content: private void OnCompleteState(bool isActorDetected)
+    parameters:
+    - id: isActorDetected
+      type: System.Boolean
+    content.vb: Private Sub OnCompleteState(isActorDetected As Boolean)
+  overload: NPCProcGen.Core.States.MoveState.OnCompleteState*
+  nameWithType.vb: MoveState.OnCompleteState(Boolean)
+  fullName.vb: NPCProcGen.Core.States.MoveState.OnCompleteState(Boolean)
+  name.vb: OnCompleteState(Boolean)
+references:
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NPCProcGen.Core.States.BaseState
+  commentId: T:NPCProcGen.Core.States.BaseState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.BaseState.html
+  name: BaseState
+  nameWithType: BaseState
+  fullName: NPCProcGen.Core.States.BaseState
+- uid: NPCProcGen.Core.States.INavigationState
+  commentId: T:NPCProcGen.Core.States.INavigationState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.INavigationState.html
+  name: INavigationState
+  nameWithType: INavigationState
+  fullName: NPCProcGen.Core.States.INavigationState
+- uid: NPCProcGen.Core.States.BaseState._owner
+  commentId: F:NPCProcGen.Core.States.BaseState._owner
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState__owner
+  name: _owner
+  nameWithType: BaseState._owner
+  fullName: NPCProcGen.Core.States.BaseState._owner
+- uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+  commentId: M:NPCProcGen.Core.States.BaseState.Update(System.Double)
+  parent: NPCProcGen.Core.States.BaseState
+  isExternal: true
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  name: Update(double)
+  nameWithType: BaseState.Update(double)
+  fullName: NPCProcGen.Core.States.BaseState.Update(double)
+  nameWithType.vb: BaseState.Update(Double)
+  fullName.vb: NPCProcGen.Core.States.BaseState.Update(Double)
+  name.vb: Update(Double)
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot.Node2D
+  commentId: T:Godot.Node2D
+  parent: Godot
+  isExternal: true
+  name: Node2D
+  nameWithType: Node2D
+  fullName: Godot.Node2D
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: System.Nullable{Godot.Vector2}
+  commentId: T:System.Nullable{Godot.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: Godot.Vector2?
+  spec.csharp:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NPCProcGen.Core.States.MoveState
+  commentId: T:NPCProcGen.Core.States.MoveState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.MoveState.html
+  name: MoveState
+  nameWithType: MoveState
+  fullName: NPCProcGen.Core.States.MoveState
+- uid: NPCProcGen.Core.States.MoveState.#ctor*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.#ctor
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState__ctor_NPCProcGen_NPCAgent2D_Godot_Node2D_System_Nullable_Godot_Vector2__
+  name: MoveState
+  nameWithType: MoveState.MoveState
+  fullName: NPCProcGen.Core.States.MoveState.MoveState
+  nameWithType.vb: MoveState.New
+  fullName.vb: NPCProcGen.Core.States.MoveState.New
+  name.vb: New
+- uid: NPCProcGen.NPCAgent2D
+  commentId: T:NPCProcGen.NPCAgent2D
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D
+  nameWithType: NPCAgent2D
+  fullName: NPCProcGen.NPCAgent2D
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: NPCProcGen.Core.States.BaseState.Enter
+  commentId: M:NPCProcGen.Core.States.BaseState.Enter
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  name: Enter()
+  nameWithType: BaseState.Enter()
+  fullName: NPCProcGen.Core.States.BaseState.Enter()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Enter
+    name: Enter
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Enter
+    name: Enter
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Enter
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.MoveState.Enter*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.Enter
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_Enter
+  name: Enter
+  nameWithType: MoveState.Enter
+  fullName: NPCProcGen.Core.States.MoveState.Enter
+- uid: NPCProcGen.Core.States.BaseState.Exit
+  commentId: M:NPCProcGen.Core.States.BaseState.Exit
+  parent: NPCProcGen.Core.States.BaseState
+  href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  name: Exit()
+  nameWithType: BaseState.Exit()
+  fullName: NPCProcGen.Core.States.BaseState.Exit()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.BaseState.Exit
+    name: Exit
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.BaseState.Exit
+    name: Exit
+    href: NPCProcGen.Core.States.BaseState.html#NPCProcGen_Core_States_BaseState_Exit
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.MoveState.Exit*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.Exit
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_Exit
+  name: Exit
+  nameWithType: MoveState.Exit
+  fullName: NPCProcGen.Core.States.MoveState.Exit
+- uid: NPCProcGen.Core.States.MoveState.IsNavigating*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.IsNavigating
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_IsNavigating
+  name: IsNavigating
+  nameWithType: MoveState.IsNavigating
+  fullName: NPCProcGen.Core.States.MoveState.IsNavigating
+- uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+  commentId: M:NPCProcGen.Core.States.INavigationState.IsNavigating
+  parent: NPCProcGen.Core.States.INavigationState
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  name: IsNavigating()
+  nameWithType: INavigationState.IsNavigating()
+  fullName: NPCProcGen.Core.States.INavigationState.IsNavigating()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NPCProcGen.Core.States.MoveState.GetTargetPosition*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.GetTargetPosition
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_GetTargetPosition
+  name: GetTargetPosition
+  nameWithType: MoveState.GetTargetPosition
+  fullName: NPCProcGen.Core.States.MoveState.GetTargetPosition
+- uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  commentId: M:NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  parent: NPCProcGen.Core.States.INavigationState
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  name: GetTargetPosition()
+  nameWithType: INavigationState.GetTargetPosition()
+  fullName: NPCProcGen.Core.States.INavigationState.GetTargetPosition()
+  spec.csharp:
+  - uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.States.MoveState.OnNavigationComplete*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.OnNavigationComplete
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_OnNavigationComplete
+  name: OnNavigationComplete
+  nameWithType: MoveState.OnNavigationComplete
+  fullName: NPCProcGen.Core.States.MoveState.OnNavigationComplete
+- uid: NPCProcGen.Core.States.MoveState.OnActorDetected*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.OnActorDetected
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_OnActorDetected_NPCProcGen_ActorTag2D_
+  name: OnActorDetected
+  nameWithType: MoveState.OnActorDetected
+  fullName: NPCProcGen.Core.States.MoveState.OnActorDetected
+- uid: NPCProcGen.ActorTag2D
+  commentId: T:NPCProcGen.ActorTag2D
+  parent: NPCProcGen
+  href: NPCProcGen.ActorTag2D.html
+  name: ActorTag2D
+  nameWithType: ActorTag2D
+  fullName: NPCProcGen.ActorTag2D
+- uid: NPCProcGen.Core.States.MoveState.OnCompleteState*
+  commentId: Overload:NPCProcGen.Core.States.MoveState.OnCompleteState
+  href: NPCProcGen.Core.States.MoveState.html#NPCProcGen_Core_States_MoveState_OnCompleteState_System_Boolean_
+  name: OnCompleteState
+  nameWithType: MoveState.OnCompleteState
+  fullName: NPCProcGen.Core.States.MoveState.OnCompleteState

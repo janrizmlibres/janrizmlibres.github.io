@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Events.IGeneralEvent
+  commentId: T:NPCProcGen.Core.Events.IGeneralEvent
+  id: IGeneralEvent
+  parent: NPCProcGen.Core.Events
+  children:
+  - NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription
+  langs:
+  - csharp
+  - vb
+  name: IGeneralEvent
+  nameWithType: IGeneralEvent
+  fullName: NPCProcGen.Core.Events.IGeneralEvent
+  type: Interface
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Events/Event.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IGeneralEvent
+    path: ../addons/NPCProcGen/Core/Events/Event.cs
+    startLine: 5
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Events
+  summary: Represents a general event.
+  example: []
+  syntax:
+    content: public interface IGeneralEvent
+    content.vb: Public Interface IGeneralEvent
+- uid: NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription
+  commentId: M:NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription
+  id: GetLocalDescription
+  parent: NPCProcGen.Core.Events.IGeneralEvent
+  langs:
+  - csharp
+  - vb
+  name: GetLocalDescription()
+  nameWithType: IGeneralEvent.GetLocalDescription()
+  fullName: NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Events/Event.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetLocalDescription
+    path: ../addons/NPCProcGen/Core/Events/Event.cs
+    startLine: 11
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Events
+  summary: Gets the local description of the event.
+  example: []
+  syntax:
+    content: string GetLocalDescription()
+    return:
+      type: System.String
+      description: A string describing the event locally.
+    content.vb: Function GetLocalDescription() As String
+  overload: NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription*
+references:
+- uid: NPCProcGen.Core.Events
+  commentId: N:NPCProcGen.Core.Events
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Events
+  nameWithType: NPCProcGen.Core.Events
+  fullName: NPCProcGen.Core.Events
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Events
+    name: Events
+    href: NPCProcGen.Core.Events.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Events
+    name: Events
+    href: NPCProcGen.Core.Events.html
+- uid: NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription*
+  commentId: Overload:NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription
+  href: NPCProcGen.Core.Events.IGeneralEvent.html#NPCProcGen_Core_Events_IGeneralEvent_GetLocalDescription
+  name: GetLocalDescription
+  nameWithType: IGeneralEvent.GetLocalDescription
+  fullName: NPCProcGen.Core.Events.IGeneralEvent.GetLocalDescription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

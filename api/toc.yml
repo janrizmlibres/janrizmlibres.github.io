@@ -1,0 +1,234 @@
+### YamlMime:TableOfContent
+items:
+- uid: EmergentEchoes.Entities.Actors
+  name: EmergentEchoes.Entities.Actors
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Entities.Actors.NPC
+    name: NPC
+    type: Class
+  - uid: EmergentEchoes.Entities.Actors.NPC.State
+    name: NPC.State
+    type: Enum
+  - uid: EmergentEchoes.Entities.Actors.Player
+    name: Player
+    type: Class
+- uid: EmergentEchoes.Entities.Camera
+  name: EmergentEchoes.Entities.Camera
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Entities.Camera.Camera2d
+    name: Camera2d
+    type: Class
+- uid: EmergentEchoes.Entities.UI.Indicators
+  name: EmergentEchoes.Entities.UI.Indicators
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Entities.UI.Indicators.EmoteBubble
+    name: EmoteBubble
+    type: Class
+  - uid: EmergentEchoes.Entities.UI.Indicators.FloatingText
+    name: FloatingText
+    type: Class
+- uid: EmergentEchoes.Stages.Island
+  name: EmergentEchoes.Stages.Island
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Stages.Island.World
+    name: World
+    type: Class
+- uid: EmergentEchoes.Utilities
+  name: EmergentEchoes.Utilities
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Utilities.EmoteManager
+    name: EmoteManager
+    type: Class
+  - uid: EmergentEchoes.Utilities.FloatTextManager
+    name: FloatTextManager
+    type: Class
+- uid: EmergentEchoes.Utilities.Enums
+  name: EmergentEchoes.Utilities.Enums
+  type: Namespace
+  items:
+  - uid: EmergentEchoes.Utilities.Enums.Emote
+    name: Emote
+    type: Enum
+- uid: NPCProcGen
+  name: NPCProcGen
+  type: Namespace
+  items:
+  - uid: NPCProcGen.ActorTag2D
+    name: ActorTag2D
+    type: Class
+  - uid: NPCProcGen.NPCAgent2D
+    name: NPCAgent2D
+    type: Class
+  - uid: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+    name: NPCAgent2D.ActionStateEnteredEventHandler
+    type: Delegate
+  - uid: NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler
+    name: NPCAgent2D.ActionStateExitedEventHandler
+    type: Delegate
+  - uid: NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler
+    name: NPCAgent2D.ExecutionEndedEventHandler
+    type: Delegate
+  - uid: NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler
+    name: NPCAgent2D.ExecutionStartedEventHandler
+    type: Delegate
+  - uid: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+    name: NPCAgent2D.TheftCompletedEventHandler
+    type: Delegate
+- uid: NPCProcGen.Autoloads
+  name: NPCProcGen.Autoloads
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Autoloads.AutoloadInitializer
+    name: AutoloadInitializer
+    type: Class
+  - uid: NPCProcGen.Autoloads.ResourceManager
+    name: ResourceManager
+    type: Class
+  - uid: NPCProcGen.Autoloads.WorldState
+    name: WorldState
+    type: Class
+- uid: NPCProcGen.Core.Actions
+  name: NPCProcGen.Core.Actions
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Actions.BaseAction
+    name: BaseAction
+    type: Class
+  - uid: NPCProcGen.Core.Actions.TheftAction
+    name: TheftAction
+    type: Class
+- uid: NPCProcGen.Core.Components
+  name: NPCProcGen.Core.Components
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Components.ActorData
+    name: ActorData
+    type: Class
+  - uid: NPCProcGen.Core.Components.ResourceStat
+    name: ResourceStat
+    type: Class
+- uid: NPCProcGen.Core.Components.Enums
+  name: NPCProcGen.Core.Components.Enums
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Components.Enums.ActionState
+    name: ActionState
+    type: Enum
+  - uid: NPCProcGen.Core.Components.Enums.ActionType
+    name: ActionType
+    type: Enum
+  - uid: NPCProcGen.Core.Components.Enums.CrimeCategory
+    name: CrimeCategory
+    type: Enum
+  - uid: NPCProcGen.Core.Components.Enums.ResourceType
+    name: ResourceType
+    type: Enum
+  - uid: NPCProcGen.Core.Components.Enums.SocialPractice
+    name: SocialPractice
+    type: Enum
+- uid: NPCProcGen.Core.Components.Records
+  name: NPCProcGen.Core.Components.Records
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Components.Records.Crime
+    name: Crime
+    type: Class
+- uid: NPCProcGen.Core.Components.Variants
+  name: NPCProcGen.Core.Components.Variants
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Components.Variants.TheftData
+    name: TheftData
+    type: Class
+- uid: NPCProcGen.Core.Events
+  name: NPCProcGen.Core.Events
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Events.Event
+    name: Event
+    type: Class
+  - uid: NPCProcGen.Core.Events.IGeneralEvent
+    name: IGeneralEvent
+    type: Interface
+  - uid: NPCProcGen.Core.Events.IPerspectiveEvent
+    name: IPerspectiveEvent
+    type: Interface
+  - uid: NPCProcGen.Core.Events.MoveEvent
+    name: MoveEvent
+    type: Class
+  - uid: NPCProcGen.Core.Events.PetitionRefusalEvent
+    name: PetitionRefusalEvent
+    type: Class
+- uid: NPCProcGen.Core.Helpers
+  name: NPCProcGen.Core.Helpers
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Helpers.CommonUtils
+    name: CommonUtils
+    type: Class
+  - uid: NPCProcGen.Core.Helpers.DebugTool
+    name: DebugTool
+    type: Class
+  - uid: NPCProcGen.Core.Helpers.NotifManager
+    name: NotifManager
+    type: Class
+- uid: NPCProcGen.Core.Internal
+  name: NPCProcGen.Core.Internal
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Internal.Executor
+    name: Executor
+    type: Class
+  - uid: NPCProcGen.Core.Internal.Memorizer
+    name: Memorizer
+    type: Class
+  - uid: NPCProcGen.Core.Internal.Sensor
+    name: Sensor
+    type: Class
+  - uid: NPCProcGen.Core.Internal.Strategizer
+    name: Strategizer
+    type: Class
+- uid: NPCProcGen.Core.States
+  name: NPCProcGen.Core.States
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.States.BaseState
+    name: BaseState
+    type: Class
+  - uid: NPCProcGen.Core.States.FleeState
+    name: FleeState
+    type: Class
+  - uid: NPCProcGen.Core.States.INavigationState
+    name: INavigationState
+    type: Interface
+  - uid: NPCProcGen.Core.States.MoveState
+    name: MoveState
+    type: Class
+  - uid: NPCProcGen.Core.States.StealState
+    name: StealState
+    type: Class
+  - uid: NPCProcGen.Core.States.WanderState
+    name: WanderState
+    type: Class
+- uid: NPCProcGen.Core.Traits
+  name: NPCProcGen.Core.Traits
+  type: Namespace
+  items:
+  - uid: NPCProcGen.Core.Traits.LawfulTrait
+    name: LawfulTrait
+    type: Class
+  - uid: NPCProcGen.Core.Traits.SurvivalTrait
+    name: SurvivalTrait
+    type: Class
+  - uid: NPCProcGen.Core.Traits.ThiefTrait
+    name: ThiefTrait
+    type: Class
+  - uid: NPCProcGen.Core.Traits.Trait
+    name: Trait
+    type: Class
+memberLayout: SamePage

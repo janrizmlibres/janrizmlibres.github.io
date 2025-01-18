@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Utilities.Enums
+  commentId: N:EmergentEchoes.Utilities.Enums
+  id: EmergentEchoes.Utilities.Enums
+  children:
+  - EmergentEchoes.Utilities.Enums.Emote
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Utilities.Enums
+  nameWithType: EmergentEchoes.Utilities.Enums
+  fullName: EmergentEchoes.Utilities.Enums
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Utilities.Enums.Emote
+  commentId: T:EmergentEchoes.Utilities.Enums.Emote
+  parent: EmergentEchoes.Utilities.Enums
+  href: EmergentEchoes.Utilities.Enums.Emote.html
+  name: Emote
+  nameWithType: Emote
+  fullName: EmergentEchoes.Utilities.Enums.Emote
+- uid: EmergentEchoes.Utilities.Enums
+  commentId: N:EmergentEchoes.Utilities.Enums
+  href: EmergentEchoes.html
+  name: EmergentEchoes.Utilities.Enums
+  nameWithType: EmergentEchoes.Utilities.Enums
+  fullName: EmergentEchoes.Utilities.Enums
+  spec.csharp:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Utilities
+    name: Utilities
+    href: EmergentEchoes.Utilities.html
+  - name: .
+  - uid: EmergentEchoes.Utilities.Enums
+    name: Enums
+    href: EmergentEchoes.Utilities.Enums.html
+  spec.vb:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Utilities
+    name: Utilities
+    href: EmergentEchoes.Utilities.html
+  - name: .
+  - uid: EmergentEchoes.Utilities.Enums
+    name: Enums
+    href: EmergentEchoes.Utilities.Enums.html

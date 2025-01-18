@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Memorizer | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Memorizer | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="The Memorizer class is responsible for managing long-term and short-term memories of actors.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/janrizmlibres/emergent-echoes/new/feat/emote-bubbles/apiSpec/new?filename=NPCProcGen_Core_Internal_Memorizer.md&amp;value=---%0Auid%3A%20NPCProcGen.Core.Internal.Memorizer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.Core.Internal.Memorizer">
+
+
+
+  <h1 id="NPCProcGen_Core_Internal_Memorizer" data-uid="NPCProcGen.Core.Internal.Memorizer" class="text-break">
+Class Memorizer  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a>.<a class="xref" href="NPCProcGen.Core.html">Core</a>.<a class="xref" href="NPCProcGen.Core.Internal.html">Internal</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The Memorizer class is responsible for managing long-term and short-term memories of actors.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Memorizer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Memorizer</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer__actorData" data-uid="NPCProcGen.Core.Internal.Memorizer._actorData">
+  _actorData
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dictionary to store actor data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly Dictionary&lt;ActorTag2D, ActorData&gt; _actorData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>, <a class="xref" href="NPCProcGen.Core.Components.ActorData.html">ActorData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_LongTermMemory_" data-uid="NPCProcGen.Core.Internal.Memorizer.LongTermMemory*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_LongTermMemory" data-uid="NPCProcGen.Core.Internal.Memorizer.LongTermMemory">
+  LongTermMemory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of long-term memories.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Event&gt; LongTermMemory { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.Core.Events.Event.html">Event</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_ShortTermMemory_" data-uid="NPCProcGen.Core.Internal.Memorizer.ShortTermMemory*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_ShortTermMemory" data-uid="NPCProcGen.Core.Internal.Memorizer.ShortTermMemory">
+  ShortTermMemory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the linked list of short-term memories.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinkedList&lt;Event&gt; ShortTermMemory { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1">LinkedList</a>&lt;<a class="xref" href="NPCProcGen.Core.Events.Event.html">Event</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_GetActorLocation_" data-uid="NPCProcGen.Core.Internal.Memorizer.GetActorLocation*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_GetActorLocation_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.Internal.Memorizer.GetActorLocation(NPCProcGen.ActorTag2D)">
+  GetActorLocation(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last known location of the specified actor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? GetActorLocation(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to get the location for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd><p>The last known location of the actor, or null if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_Initialize_" data-uid="NPCProcGen.Core.Internal.Memorizer.Initialize*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_Initialize_System_Collections_Generic_List_NPCProcGen_ActorTag2D__" data-uid="NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})">
+  Initialize(List&lt;ActorTag2D&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the memorizer with a list of actors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(List&lt;ActorTag2D&gt; actors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>&gt;</dt>
+    <dd><p>The list of actors to initialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_IsClose_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsClose*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_IsClose_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsClose(NPCProcGen.ActorTag2D)">
+  IsClose(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the specified actor is close.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClose(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the actor is close, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_IsFriendly_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsFriendly*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_IsFriendly_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsFriendly(NPCProcGen.ActorTag2D)">
+  IsFriendly(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the specified actor is friendly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFriendly(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the actor is friendly, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_IsTrusted_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsTrusted*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_IsTrusted_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.Internal.Memorizer.IsTrusted(NPCProcGen.ActorTag2D)">
+  IsTrusted(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the specified actor is trusted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTrusted(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the actor is trusted, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_Update_" data-uid="NPCProcGen.Core.Internal.Memorizer.Update*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_Update_System_Double_" data-uid="NPCProcGen.Core.Internal.Memorizer.Update(System.Double)">
+  Update(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the memorizer with the given delta time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The delta time to update with.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Internal_Memorizer_UpdateActorLocation_" data-uid="NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation*"></a>
+
+  <h3 id="NPCProcGen_Core_Internal_Memorizer_UpdateActorLocation_NPCProcGen_ActorTag2D_Godot_Vector2_" data-uid="NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation(NPCProcGen.ActorTag2D,Godot.Vector2)">
+  UpdateActorLocation(ActorTag2D, Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the location of the specified actor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateActorLocation(ActorTag2D actor, Vector2 location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to update the location for.</p>
+</dd>
+    <dt><code>location</code> <span class="xref">Vector2</span></dt>
+    <dd><p>The new location of the actor.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Internal/Memorizer.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

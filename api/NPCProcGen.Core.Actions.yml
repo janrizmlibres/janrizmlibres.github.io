@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Actions
+  commentId: N:NPCProcGen.Core.Actions
+  id: NPCProcGen.Core.Actions
+  children:
+  - NPCProcGen.Core.Actions.BaseAction
+  - NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Actions
+  nameWithType: NPCProcGen.Core.Actions
+  fullName: NPCProcGen.Core.Actions
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Actions.BaseAction
+  commentId: T:NPCProcGen.Core.Actions.BaseAction
+  parent: NPCProcGen.Core.Actions
+  href: NPCProcGen.Core.Actions.BaseAction.html
+  name: BaseAction
+  nameWithType: BaseAction
+  fullName: NPCProcGen.Core.Actions.BaseAction
+- uid: NPCProcGen.Core.Actions.TheftAction
+  commentId: T:NPCProcGen.Core.Actions.TheftAction
+  href: NPCProcGen.Core.Actions.TheftAction.html
+  name: TheftAction
+  nameWithType: TheftAction
+  fullName: NPCProcGen.Core.Actions.TheftAction
+- uid: NPCProcGen.Core.Actions
+  commentId: N:NPCProcGen.Core.Actions
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Actions
+  nameWithType: NPCProcGen.Core.Actions
+  fullName: NPCProcGen.Core.Actions
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Actions
+    name: Actions
+    href: NPCProcGen.Core.Actions.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Actions
+    name: Actions
+    href: NPCProcGen.Core.Actions.html

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ActorData | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ActorData | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="Represents data related to an actor.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/janrizmlibres/emergent-echoes/new/feat/emote-bubbles/apiSpec/new?filename=NPCProcGen_Core_Components_ActorData.md&amp;value=---%0Auid%3A%20NPCProcGen.Core.Components.ActorData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.Core.Components.ActorData">
+
+
+
+  <h1 id="NPCProcGen_Core_Components_ActorData" data-uid="NPCProcGen.Core.Components.ActorData" class="text-break">
+Class ActorData  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a>.<a class="xref" href="NPCProcGen.Core.html">Core</a>.<a class="xref" href="NPCProcGen.Core.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents data related to an actor.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ActorData</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ActorData</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NPCProcGen_Core_Components_ActorData__ctor_" data-uid="NPCProcGen.Core.Components.ActorData.#ctor*"></a>
+
+  <h3 id="NPCProcGen_Core_Components_ActorData__ctor_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.Components.ActorData.#ctor(NPCProcGen.ActorTag2D)">
+  ActorData(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="NPCProcGen.Core.Components.ActorData.html">ActorData</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActorData(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor associated with this data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Core_Components_ActorData__actor" data-uid="NPCProcGen.Core.Components.ActorData._actor">
+  _actor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly ActorTag2D _actor</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Components_ActorData__decayDuration" data-uid="NPCProcGen.Core.Components.ActorData._decayDuration">
+  _decayDuration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static readonly float _decayDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Components_ActorData__decayTimer" data-uid="NPCProcGen.Core.Components.ActorData._decayTimer">
+  _decayTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private float _decayTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Components_ActorData__lastKnownPosition" data-uid="NPCProcGen.Core.Components.ActorData._lastKnownPosition">
+  _lastKnownPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2? _lastKnownPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NPCProcGen_Core_Components_ActorData_LastKnownPosition_" data-uid="NPCProcGen.Core.Components.ActorData.LastKnownPosition*"></a>
+
+  <h3 id="NPCProcGen_Core_Components_ActorData_LastKnownPosition" data-uid="NPCProcGen.Core.Components.ActorData.LastKnownPosition">
+  LastKnownPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the last known position of the actor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? LastKnownPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Components_ActorData_Relationship_" data-uid="NPCProcGen.Core.Components.ActorData.Relationship*"></a>
+
+  <h3 id="NPCProcGen_Core_Components_ActorData_Relationship" data-uid="NPCProcGen.Core.Components.ActorData.Relationship">
+  Relationship
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the relationship value of the actor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Relationship { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_Core_Components_ActorData_Update_" data-uid="NPCProcGen.Core.Components.ActorData.Update*"></a>
+
+  <h3 id="NPCProcGen_Core_Components_ActorData_Update_System_Double_" data-uid="NPCProcGen.Core.Components.ActorData.Update(System.Double)">
+  Update(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the actor data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The time elapsed since the last update.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Components/ActorData.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

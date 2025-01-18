@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Events
+  commentId: N:NPCProcGen.Core.Events
+  id: NPCProcGen.Core.Events
+  children:
+  - NPCProcGen.Core.Events.Event
+  - NPCProcGen.Core.Events.IGeneralEvent
+  - NPCProcGen.Core.Events.IPerspectiveEvent
+  - NPCProcGen.Core.Events.MoveEvent
+  - NPCProcGen.Core.Events.PetitionRefusalEvent
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Events
+  nameWithType: NPCProcGen.Core.Events
+  fullName: NPCProcGen.Core.Events
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Events.IGeneralEvent
+  commentId: T:NPCProcGen.Core.Events.IGeneralEvent
+  parent: NPCProcGen.Core.Events
+  href: NPCProcGen.Core.Events.IGeneralEvent.html
+  name: IGeneralEvent
+  nameWithType: IGeneralEvent
+  fullName: NPCProcGen.Core.Events.IGeneralEvent
+- uid: NPCProcGen.Core.Events.IPerspectiveEvent
+  commentId: T:NPCProcGen.Core.Events.IPerspectiveEvent
+  parent: NPCProcGen.Core.Events
+  href: NPCProcGen.Core.Events.IPerspectiveEvent.html
+  name: IPerspectiveEvent
+  nameWithType: IPerspectiveEvent
+  fullName: NPCProcGen.Core.Events.IPerspectiveEvent
+- uid: NPCProcGen.Core.Events.Event
+  commentId: T:NPCProcGen.Core.Events.Event
+  parent: NPCProcGen.Core.Events
+  href: NPCProcGen.Core.Events.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: NPCProcGen.Core.Events.Event
+- uid: NPCProcGen.Core.Events.MoveEvent
+  commentId: T:NPCProcGen.Core.Events.MoveEvent
+  href: NPCProcGen.Core.Events.MoveEvent.html
+  name: MoveEvent
+  nameWithType: MoveEvent
+  fullName: NPCProcGen.Core.Events.MoveEvent
+- uid: NPCProcGen.Core.Events.PetitionRefusalEvent
+  commentId: T:NPCProcGen.Core.Events.PetitionRefusalEvent
+  href: NPCProcGen.Core.Events.PetitionRefusalEvent.html
+  name: PetitionRefusalEvent
+  nameWithType: PetitionRefusalEvent
+  fullName: NPCProcGen.Core.Events.PetitionRefusalEvent
+- uid: NPCProcGen.Core.Events
+  commentId: N:NPCProcGen.Core.Events
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Events
+  nameWithType: NPCProcGen.Core.Events
+  fullName: NPCProcGen.Core.Events
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Events
+    name: Events
+    href: NPCProcGen.Core.Events.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Events
+    name: Events
+    href: NPCProcGen.Core.Events.html

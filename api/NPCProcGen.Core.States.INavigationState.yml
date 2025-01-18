@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.States.INavigationState
+  commentId: T:NPCProcGen.Core.States.INavigationState
+  id: INavigationState
+  parent: NPCProcGen.Core.States
+  children:
+  - NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  - NPCProcGen.Core.States.INavigationState.IsNavigating
+  langs:
+  - csharp
+  - vb
+  name: INavigationState
+  nameWithType: INavigationState
+  fullName: NPCProcGen.Core.States.INavigationState
+  type: Interface
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/BaseState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: INavigationState
+    path: ../addons/NPCProcGen/Core/States/BaseState.cs
+    startLine: 7
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Interface for navigation states.
+  example: []
+  syntax:
+    content: public interface INavigationState
+    content.vb: Public Interface INavigationState
+- uid: NPCProcGen.Core.States.INavigationState.IsNavigating
+  commentId: M:NPCProcGen.Core.States.INavigationState.IsNavigating
+  id: IsNavigating
+  parent: NPCProcGen.Core.States.INavigationState
+  langs:
+  - csharp
+  - vb
+  name: IsNavigating()
+  nameWithType: INavigationState.IsNavigating()
+  fullName: NPCProcGen.Core.States.INavigationState.IsNavigating()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/BaseState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsNavigating
+    path: ../addons/NPCProcGen/Core/States/BaseState.cs
+    startLine: 13
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Checks if the NPC is navigating.
+  example: []
+  syntax:
+    content: bool IsNavigating()
+    return:
+      type: System.Boolean
+      description: True if navigating, otherwise false.
+    content.vb: Function IsNavigating() As Boolean
+  overload: NPCProcGen.Core.States.INavigationState.IsNavigating*
+- uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  commentId: M:NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  id: GetTargetPosition
+  parent: NPCProcGen.Core.States.INavigationState
+  langs:
+  - csharp
+  - vb
+  name: GetTargetPosition()
+  nameWithType: INavigationState.GetTargetPosition()
+  fullName: NPCProcGen.Core.States.INavigationState.GetTargetPosition()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/States/BaseState.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetTargetPosition
+    path: ../addons/NPCProcGen/Core/States/BaseState.cs
+    startLine: 19
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.States
+  summary: Gets the target position for navigation.
+  example: []
+  syntax:
+    content: Vector2 GetTargetPosition()
+    return:
+      type: Godot.Vector2
+      description: The target position as a Vector2.
+    content.vb: Function GetTargetPosition() As Vector2
+  overload: NPCProcGen.Core.States.INavigationState.GetTargetPosition*
+references:
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+- uid: NPCProcGen.Core.States.INavigationState.IsNavigating*
+  commentId: Overload:NPCProcGen.Core.States.INavigationState.IsNavigating
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_IsNavigating
+  name: IsNavigating
+  nameWithType: INavigationState.IsNavigating
+  fullName: NPCProcGen.Core.States.INavigationState.IsNavigating
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.Core.States.INavigationState.GetTargetPosition*
+  commentId: Overload:NPCProcGen.Core.States.INavigationState.GetTargetPosition
+  href: NPCProcGen.Core.States.INavigationState.html#NPCProcGen_Core_States_INavigationState_GetTargetPosition
+  name: GetTargetPosition
+  nameWithType: INavigationState.GetTargetPosition
+  fullName: NPCProcGen.Core.States.INavigationState.GetTargetPosition
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot

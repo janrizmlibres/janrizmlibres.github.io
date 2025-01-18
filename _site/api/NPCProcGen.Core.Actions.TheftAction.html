@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TheftAction | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TheftAction | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="Represents an action where an NPC agent attempts to steal a resource from a target.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/janrizmlibres/emergent-echoes/new/feat/emote-bubbles/apiSpec/new?filename=NPCProcGen_Core_Actions_TheftAction.md&amp;value=---%0Auid%3A%20NPCProcGen.Core.Actions.TheftAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.Core.Actions.TheftAction">
+
+
+
+  <h1 id="NPCProcGen_Core_Actions_TheftAction" data-uid="NPCProcGen.Core.Actions.TheftAction" class="text-break">
+Class TheftAction  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a>.<a class="xref" href="NPCProcGen.Core.html">Core</a>.<a class="xref" href="NPCProcGen.Core.Actions.html">Actions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents an action where an NPC agent attempts to steal a resource from a target.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TheftAction : BaseAction</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="NPCProcGen.Core.Actions.BaseAction.html">BaseAction</a></div>
+      <div><span class="xref">TheftAction</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NPCProcGen_Core_Actions_TheftAction__ctor_" data-uid="NPCProcGen.Core.Actions.TheftAction.#ctor*"></a>
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction__ctor_NPCProcGen_NPCAgent2D_NPCProcGen_ActorTag2D_NPCProcGen_Core_Components_Enums_ResourceType_" data-uid="NPCProcGen.Core.Actions.TheftAction.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)">
+  TheftAction(NPCAgent2D, ActorTag2D, ResourceType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="NPCProcGen.Core.Actions.TheftAction.html">TheftAction</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TheftAction(NPCAgent2D owner, ActorTag2D target, ResourceType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a></dt>
+    <dd><p>The NPC agent performing the action.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The target actor from which to steal.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="NPCProcGen.Core.Components.Enums.ResourceType.html">ResourceType</a></dt>
+    <dd><p>The type of resource to steal.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction__target" data-uid="NPCProcGen.Core.Actions.TheftAction._target">
+  _target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The target actor from which to steal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly ActorTag2D _target</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction__targetLastPos" data-uid="NPCProcGen.Core.Actions.TheftAction._targetLastPos">
+  _targetLastPos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The last known position of the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2 _targetLastPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction__targetResource" data-uid="NPCProcGen.Core.Actions.TheftAction._targetResource">
+  _targetResource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of resource to steal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly ResourceType _targetResource</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Components.Enums.ResourceType.html">ResourceType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction_moveState" data-uid="NPCProcGen.Core.Actions.TheftAction.moveState">
+  moveState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The state for moving towards the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private MoveState moveState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.States.MoveState.html">MoveState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction_stealState" data-uid="NPCProcGen.Core.Actions.TheftAction.stealState">
+  stealState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The state for stealing from the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private StealState stealState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.States.StealState.html">StealState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_Core_Actions_TheftAction_InitializeStates_" data-uid="NPCProcGen.Core.Actions.TheftAction.InitializeStates*"></a>
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction_InitializeStates" data-uid="NPCProcGen.Core.Actions.TheftAction.InitializeStates">
+  InitializeStates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the states for the theft action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void InitializeStates()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Actions_TheftAction_Run_" data-uid="NPCProcGen.Core.Actions.TheftAction.Run*"></a>
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction_Run" data-uid="NPCProcGen.Core.Actions.TheftAction.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the theft action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_Actions_TheftAction_Update_" data-uid="NPCProcGen.Core.Actions.TheftAction.Update*"></a>
+
+  <h3 id="NPCProcGen_Core_Actions_TheftAction_Update_System_Double_" data-uid="NPCProcGen.Core.Actions.TheftAction.Update(System.Double)">
+  Update(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the current state of the action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The time elapsed since the last update.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/Actions/TheftAction.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

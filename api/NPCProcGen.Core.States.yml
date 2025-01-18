@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  id: NPCProcGen.Core.States
+  children:
+  - NPCProcGen.Core.States.BaseState
+  - NPCProcGen.Core.States.FleeState
+  - NPCProcGen.Core.States.INavigationState
+  - NPCProcGen.Core.States.MoveState
+  - NPCProcGen.Core.States.StealState
+  - NPCProcGen.Core.States.WanderState
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.States.INavigationState
+  commentId: T:NPCProcGen.Core.States.INavigationState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.INavigationState.html
+  name: INavigationState
+  nameWithType: INavigationState
+  fullName: NPCProcGen.Core.States.INavigationState
+- uid: NPCProcGen.Core.States.BaseState
+  commentId: T:NPCProcGen.Core.States.BaseState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.BaseState.html
+  name: BaseState
+  nameWithType: BaseState
+  fullName: NPCProcGen.Core.States.BaseState
+- uid: NPCProcGen.Core.States.FleeState
+  commentId: T:NPCProcGen.Core.States.FleeState
+  href: NPCProcGen.Core.States.FleeState.html
+  name: FleeState
+  nameWithType: FleeState
+  fullName: NPCProcGen.Core.States.FleeState
+- uid: NPCProcGen.Core.States.MoveState
+  commentId: T:NPCProcGen.Core.States.MoveState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.MoveState.html
+  name: MoveState
+  nameWithType: MoveState
+  fullName: NPCProcGen.Core.States.MoveState
+- uid: NPCProcGen.Core.States.StealState
+  commentId: T:NPCProcGen.Core.States.StealState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.StealState.html
+  name: StealState
+  nameWithType: StealState
+  fullName: NPCProcGen.Core.States.StealState
+- uid: NPCProcGen.Core.States.WanderState
+  commentId: T:NPCProcGen.Core.States.WanderState
+  href: NPCProcGen.Core.States.WanderState.html
+  name: WanderState
+  nameWithType: WanderState
+  fullName: NPCProcGen.Core.States.WanderState
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html

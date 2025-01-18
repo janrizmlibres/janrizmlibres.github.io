@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WanderState | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WanderState | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="Represents a state where the NPC wanders around.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/janrizmlibres/emergent-echoes/new/feat/emote-bubbles/apiSpec/new?filename=NPCProcGen_Core_States_WanderState.md&amp;value=---%0Auid%3A%20NPCProcGen.Core.States.WanderState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.Core.States.WanderState">
+
+
+
+  <h1 id="NPCProcGen_Core_States_WanderState" data-uid="NPCProcGen.Core.States.WanderState" class="text-break">
+Class WanderState  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a>.<a class="xref" href="NPCProcGen.Core.html">Core</a>.<a class="xref" href="NPCProcGen.Core.States.html">States</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a state where the NPC wanders around.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WanderState : BaseState, INavigationState</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="NPCProcGen.Core.States.BaseState.html">BaseState</a></div>
+      <div><span class="xref">WanderState</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="NPCProcGen.Core.States.INavigationState.html">INavigationState</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="NPCProcGen_Core_States_WanderState__ctor_" data-uid="NPCProcGen.Core.States.WanderState.#ctor*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState__ctor_NPCProcGen_NPCAgent2D_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.States.WanderState.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D)">
+  WanderState(NPCAgent2D, ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="NPCProcGen.Core.States.WanderState.html">WanderState</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WanderState(NPCAgent2D owner, ActorTag2D target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a></dt>
+    <dd><p>The owner of the state.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The target actor.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__isWandering" data-uid="NPCProcGen.Core.States.WanderState._isWandering">
+  _isWandering
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool _isWandering</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__max" data-uid="NPCProcGen.Core.States.WanderState._max">
+  _max
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static readonly int _max</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__maxDuration" data-uid="NPCProcGen.Core.States.WanderState._maxDuration">
+  _maxDuration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private float _maxDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__min" data-uid="NPCProcGen.Core.States.WanderState._min">
+  _min
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static readonly int _min</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__target" data-uid="NPCProcGen.Core.States.WanderState._target">
+  _target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly ActorTag2D _target</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__targetPosition" data-uid="NPCProcGen.Core.States.WanderState._targetPosition">
+  _targetPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2 _targetPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__timer" data-uid="NPCProcGen.Core.States.WanderState._timer">
+  _timer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private float _timer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__wanderInterval" data-uid="NPCProcGen.Core.States.WanderState._wanderInterval">
+  _wanderInterval
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private float _wanderInterval</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState__wanderRadius" data-uid="NPCProcGen.Core.States.WanderState._wanderRadius">
+  _wanderRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static readonly float _wanderRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_Core_States_WanderState_Enter_" data-uid="NPCProcGen.Core.States.WanderState.Enter*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_Enter" data-uid="NPCProcGen.Core.States.WanderState.Enter">
+  Enter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the state is entered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Enter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_Exit_" data-uid="NPCProcGen.Core.States.WanderState.Exit*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_Exit" data-uid="NPCProcGen.Core.States.WanderState.Exit">
+  Exit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the state is exited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Exit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_GetTargetPosition_" data-uid="NPCProcGen.Core.States.WanderState.GetTargetPosition*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_GetTargetPosition" data-uid="NPCProcGen.Core.States.WanderState.GetTargetPosition">
+  GetTargetPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the target position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetTargetPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd><p>The target position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_IsNavigating_" data-uid="NPCProcGen.Core.States.WanderState.IsNavigating*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_IsNavigating" data-uid="NPCProcGen.Core.States.WanderState.IsNavigating">
+  IsNavigating()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the NPC is navigating.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNavigating()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the NPC is navigating, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_OnActorDetected_" data-uid="NPCProcGen.Core.States.WanderState.OnActorDetected*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_OnActorDetected_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.Core.States.WanderState.OnActorDetected(NPCProcGen.ActorTag2D)">
+  OnActorDetected(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the detection of an actor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnActorDetected(ActorTag2D target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The detected actor.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_OnCompleteState_" data-uid="NPCProcGen.Core.States.WanderState.OnCompleteState*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_OnCompleteState_System_Boolean_" data-uid="NPCProcGen.Core.States.WanderState.OnCompleteState(System.Boolean)">
+  OnCompleteState(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the completion of the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnCompleteState(bool durationReached)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>durationReached</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates if the maximum duration was reached.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_OnNavigationComplete_" data-uid="NPCProcGen.Core.States.WanderState.OnNavigationComplete*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_OnNavigationComplete" data-uid="NPCProcGen.Core.States.WanderState.OnNavigationComplete">
+  OnNavigationComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the completion of navigation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnNavigationComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_Core_States_WanderState_Update_" data-uid="NPCProcGen.Core.States.WanderState.Update*"></a>
+
+  <h3 id="NPCProcGen_Core_States_WanderState_Update_System_Double_" data-uid="NPCProcGen.Core.States.WanderState.Update(System.Double)">
+  Update(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The time elapsed since the last update.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="NPCProcGen_Core_States_WanderState_CompleteState" data-uid="NPCProcGen.Core.States.WanderState.CompleteState">
+  CompleteState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when the state is completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; CompleteState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Core/States/WanderState.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

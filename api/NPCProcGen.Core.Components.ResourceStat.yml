@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components.ResourceStat
+  commentId: T:NPCProcGen.Core.Components.ResourceStat
+  id: ResourceStat
+  parent: NPCProcGen.Core.Components
+  children:
+  - NPCProcGen.Core.Components.ResourceStat.#ctor(NPCProcGen.Core.Components.Enums.ResourceType,System.Single,System.Single)
+  - NPCProcGen.Core.Components.ResourceStat.Amount
+  - NPCProcGen.Core.Components.ResourceStat.IsDeficient
+  - NPCProcGen.Core.Components.ResourceStat.IsImbalanced
+  - NPCProcGen.Core.Components.ResourceStat.IsSaturated
+  - NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+  - NPCProcGen.Core.Components.ResourceStat.Type
+  - NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+  - NPCProcGen.Core.Components.ResourceStat.Weight
+  - NPCProcGen.Core.Components.ResourceStat.amount
+  langs:
+  - csharp
+  - vb
+  name: ResourceStat
+  nameWithType: ResourceStat
+  fullName: NPCProcGen.Core.Components.ResourceStat
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: ResourceStat
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 8
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Represents the statistics of a resource.
+  example: []
+  syntax:
+    content: public class ResourceStat
+    content.vb: Public Class ResourceStat
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.Components.ResourceStat.Type
+  commentId: P:NPCProcGen.Core.Components.ResourceStat.Type
+  id: Type
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ResourceStat.Type
+  fullName: NPCProcGen.Core.Components.ResourceStat.Type
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Type
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 13
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Gets the type of resource.
+  example: []
+  syntax:
+    content: public ResourceType Type { get; private set; }
+    parameters: []
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+    content.vb: Public Property Type As ResourceType
+  overload: NPCProcGen.Core.Components.ResourceStat.Type*
+- uid: NPCProcGen.Core.Components.ResourceStat.Amount
+  commentId: P:NPCProcGen.Core.Components.ResourceStat.Amount
+  id: Amount
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: ResourceStat.Amount
+  fullName: NPCProcGen.Core.Components.ResourceStat.Amount
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Amount
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 18
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Gets or sets the amount of resource.
+  example: []
+  syntax:
+    content: public float Amount { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Amount As Single
+  overload: NPCProcGen.Core.Components.ResourceStat.Amount*
+- uid: NPCProcGen.Core.Components.ResourceStat.Weight
+  commentId: P:NPCProcGen.Core.Components.ResourceStat.Weight
+  id: Weight
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: ResourceStat.Weight
+  fullName: NPCProcGen.Core.Components.ResourceStat.Weight
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Weight
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 31
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Gets the weight of the resource.
+  example: []
+  syntax:
+    content: public float Weight { get; private set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Weight As Single
+  overload: NPCProcGen.Core.Components.ResourceStat.Weight*
+- uid: NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+  commentId: P:NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+  id: LowerThreshold
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: LowerThreshold
+  nameWithType: ResourceStat.LowerThreshold
+  fullName: NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: LowerThreshold
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 36
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Gets the lower threshold for the resource amount.
+  example: []
+  syntax:
+    content: public float LowerThreshold { get; private set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LowerThreshold As Single
+  overload: NPCProcGen.Core.Components.ResourceStat.LowerThreshold*
+- uid: NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+  commentId: P:NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+  id: UpperThreshold
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: UpperThreshold
+  nameWithType: ResourceStat.UpperThreshold
+  fullName: NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: UpperThreshold
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 41
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Gets the upper threshold for the resource amount.
+  example: []
+  syntax:
+    content: public float UpperThreshold { get; private set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property UpperThreshold As Single
+  overload: NPCProcGen.Core.Components.ResourceStat.UpperThreshold*
+- uid: NPCProcGen.Core.Components.ResourceStat.amount
+  commentId: F:NPCProcGen.Core.Components.ResourceStat.amount
+  id: amount
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: amount
+  nameWithType: ResourceStat.amount
+  fullName: NPCProcGen.Core.Components.ResourceStat.amount
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: amount
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 43
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  syntax:
+    content: private float amount
+    return:
+      type: System.Single
+    content.vb: Private amount As Single
+- uid: NPCProcGen.Core.Components.ResourceStat.#ctor(NPCProcGen.Core.Components.Enums.ResourceType,System.Single,System.Single)
+  commentId: M:NPCProcGen.Core.Components.ResourceStat.#ctor(NPCProcGen.Core.Components.Enums.ResourceType,System.Single,System.Single)
+  id: '#ctor(NPCProcGen.Core.Components.Enums.ResourceType,System.Single,System.Single)'
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: ResourceStat(ResourceType, float, float)
+  nameWithType: ResourceStat.ResourceStat(ResourceType, float, float)
+  fullName: NPCProcGen.Core.Components.ResourceStat.ResourceStat(NPCProcGen.Core.Components.Enums.ResourceType, float, float)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 51
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.Components.ResourceStat" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public ResourceStat(ResourceType type, float value, float weight)
+    parameters:
+    - id: type
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+      description: The type of resource.
+    - id: value
+      type: System.Single
+      description: The initial amount of resource.
+    - id: weight
+      type: System.Single
+      description: The weight of the resource.
+    content.vb: Public Sub New(type As ResourceType, value As Single, weight As Single)
+  overload: NPCProcGen.Core.Components.ResourceStat.#ctor*
+  nameWithType.vb: ResourceStat.New(ResourceType, Single, Single)
+  fullName.vb: NPCProcGen.Core.Components.ResourceStat.New(NPCProcGen.Core.Components.Enums.ResourceType, Single, Single)
+  name.vb: New(ResourceType, Single, Single)
+- uid: NPCProcGen.Core.Components.ResourceStat.IsImbalanced
+  commentId: M:NPCProcGen.Core.Components.ResourceStat.IsImbalanced
+  id: IsImbalanced
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: IsImbalanced()
+  nameWithType: ResourceStat.IsImbalanced()
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsImbalanced()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsImbalanced
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 66
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Determines whether the resource amount is imbalanced.
+  example: []
+  syntax:
+    content: public bool IsImbalanced()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the resource amount is imbalanced; otherwise, <code>false</code>.
+    content.vb: Public Function IsImbalanced() As Boolean
+  overload: NPCProcGen.Core.Components.ResourceStat.IsImbalanced*
+- uid: NPCProcGen.Core.Components.ResourceStat.IsDeficient
+  commentId: M:NPCProcGen.Core.Components.ResourceStat.IsDeficient
+  id: IsDeficient
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: IsDeficient()
+  nameWithType: ResourceStat.IsDeficient()
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsDeficient()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsDeficient
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 75
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Determines whether the resource amount is deficient.
+  example: []
+  syntax:
+    content: public bool IsDeficient()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the resource amount is deficient; otherwise, <code>false</code>.
+    content.vb: Public Function IsDeficient() As Boolean
+  overload: NPCProcGen.Core.Components.ResourceStat.IsDeficient*
+- uid: NPCProcGen.Core.Components.ResourceStat.IsSaturated
+  commentId: M:NPCProcGen.Core.Components.ResourceStat.IsSaturated
+  id: IsSaturated
+  parent: NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: IsSaturated()
+  nameWithType: ResourceStat.IsSaturated()
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsSaturated()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Components/ResourceStat.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsSaturated
+    path: ../addons/NPCProcGen/Core/Components/ResourceStat.cs
+    startLine: 84
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Components
+  summary: Determines whether the resource amount is saturated.
+  example: []
+  syntax:
+    content: public bool IsSaturated()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the resource amount is saturated; otherwise, <code>false</code>.
+    content.vb: Public Function IsSaturated() As Boolean
+  overload: NPCProcGen.Core.Components.ResourceStat.IsSaturated*
+references:
+- uid: NPCProcGen.Core.Components
+  commentId: N:NPCProcGen.Core.Components
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components
+  nameWithType: NPCProcGen.Core.Components
+  fullName: NPCProcGen.Core.Components
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.Core.Components.ResourceStat.Type*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.Type
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_Type
+  name: Type
+  nameWithType: ResourceStat.Type
+  fullName: NPCProcGen.Core.Components.ResourceStat.Type
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+- uid: NPCProcGen.Core.Components.ResourceStat.Amount*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.Amount
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_Amount
+  name: Amount
+  nameWithType: ResourceStat.Amount
+  fullName: NPCProcGen.Core.Components.ResourceStat.Amount
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NPCProcGen.Core.Components.ResourceStat.Weight*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.Weight
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_Weight
+  name: Weight
+  nameWithType: ResourceStat.Weight
+  fullName: NPCProcGen.Core.Components.ResourceStat.Weight
+- uid: NPCProcGen.Core.Components.ResourceStat.LowerThreshold*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_LowerThreshold
+  name: LowerThreshold
+  nameWithType: ResourceStat.LowerThreshold
+  fullName: NPCProcGen.Core.Components.ResourceStat.LowerThreshold
+- uid: NPCProcGen.Core.Components.ResourceStat.UpperThreshold*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_UpperThreshold
+  name: UpperThreshold
+  nameWithType: ResourceStat.UpperThreshold
+  fullName: NPCProcGen.Core.Components.ResourceStat.UpperThreshold
+- uid: NPCProcGen.Core.Components.ResourceStat
+  commentId: T:NPCProcGen.Core.Components.ResourceStat
+  parent: NPCProcGen.Core.Components
+  href: NPCProcGen.Core.Components.ResourceStat.html
+  name: ResourceStat
+  nameWithType: ResourceStat
+  fullName: NPCProcGen.Core.Components.ResourceStat
+- uid: NPCProcGen.Core.Components.ResourceStat.#ctor*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.#ctor
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat__ctor_NPCProcGen_Core_Components_Enums_ResourceType_System_Single_System_Single_
+  name: ResourceStat
+  nameWithType: ResourceStat.ResourceStat
+  fullName: NPCProcGen.Core.Components.ResourceStat.ResourceStat
+  nameWithType.vb: ResourceStat.New
+  fullName.vb: NPCProcGen.Core.Components.ResourceStat.New
+  name.vb: New
+- uid: NPCProcGen.Core.Components.ResourceStat.IsImbalanced*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.IsImbalanced
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_IsImbalanced
+  name: IsImbalanced
+  nameWithType: ResourceStat.IsImbalanced
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsImbalanced
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NPCProcGen.Core.Components.ResourceStat.IsDeficient*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.IsDeficient
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_IsDeficient
+  name: IsDeficient
+  nameWithType: ResourceStat.IsDeficient
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsDeficient
+- uid: NPCProcGen.Core.Components.ResourceStat.IsSaturated*
+  commentId: Overload:NPCProcGen.Core.Components.ResourceStat.IsSaturated
+  href: NPCProcGen.Core.Components.ResourceStat.html#NPCProcGen_Core_Components_ResourceStat_IsSaturated
+  name: IsSaturated
+  nameWithType: ResourceStat.IsSaturated
+  fullName: NPCProcGen.Core.Components.ResourceStat.IsSaturated

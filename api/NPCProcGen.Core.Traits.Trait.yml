@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Traits.Trait
+  commentId: T:NPCProcGen.Core.Traits.Trait
+  id: Trait
+  parent: NPCProcGen.Core.Traits
+  children:
+  - NPCProcGen.Core.Traits.Trait.#ctor(NPCProcGen.NPCAgent2D,System.Single,NPCProcGen.Core.Internal.Sensor,NPCProcGen.Core.Internal.Memorizer)
+  - NPCProcGen.Core.Traits.Trait.EvaluateAction(NPCProcGen.Core.Components.Enums.SocialPractice)
+  - NPCProcGen.Core.Traits.Trait._memorizer
+  - NPCProcGen.Core.Traits.Trait._owner
+  - NPCProcGen.Core.Traits.Trait._sensor
+  - NPCProcGen.Core.Traits.Trait._weight
+  langs:
+  - csharp
+  - vb
+  name: Trait
+  nameWithType: Trait
+  fullName: NPCProcGen.Core.Traits.Trait
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Trait
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 10
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  summary: Represents a trait of an NPC.
+  example: []
+  syntax:
+    content: public abstract class Trait
+    content.vb: Public MustInherit Class Trait
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - NPCProcGen.Core.Traits.LawfulTrait
+  - NPCProcGen.Core.Traits.SurvivalTrait
+  - NPCProcGen.Core.Traits.ThiefTrait
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.Traits.Trait._owner
+  commentId: F:NPCProcGen.Core.Traits.Trait._owner
+  id: _owner
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: _owner
+  nameWithType: Trait._owner
+  fullName: NPCProcGen.Core.Traits.Trait._owner
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _owner
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 12
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  syntax:
+    content: protected readonly NPCAgent2D _owner
+    return:
+      type: NPCProcGen.NPCAgent2D
+    content.vb: Protected ReadOnly _owner As NPCAgent2D
+- uid: NPCProcGen.Core.Traits.Trait._weight
+  commentId: F:NPCProcGen.Core.Traits.Trait._weight
+  id: _weight
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: _weight
+  nameWithType: Trait._weight
+  fullName: NPCProcGen.Core.Traits.Trait._weight
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _weight
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 13
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  syntax:
+    content: protected readonly float _weight
+    return:
+      type: System.Single
+    content.vb: Protected ReadOnly _weight As Single
+- uid: NPCProcGen.Core.Traits.Trait._sensor
+  commentId: F:NPCProcGen.Core.Traits.Trait._sensor
+  id: _sensor
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: _sensor
+  nameWithType: Trait._sensor
+  fullName: NPCProcGen.Core.Traits.Trait._sensor
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _sensor
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 14
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  syntax:
+    content: protected readonly Sensor _sensor
+    return:
+      type: NPCProcGen.Core.Internal.Sensor
+    content.vb: Protected ReadOnly _sensor As Sensor
+- uid: NPCProcGen.Core.Traits.Trait._memorizer
+  commentId: F:NPCProcGen.Core.Traits.Trait._memorizer
+  id: _memorizer
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: _memorizer
+  nameWithType: Trait._memorizer
+  fullName: NPCProcGen.Core.Traits.Trait._memorizer
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _memorizer
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 15
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  syntax:
+    content: protected readonly Memorizer _memorizer
+    return:
+      type: NPCProcGen.Core.Internal.Memorizer
+    content.vb: Protected ReadOnly _memorizer As Memorizer
+- uid: NPCProcGen.Core.Traits.Trait.#ctor(NPCProcGen.NPCAgent2D,System.Single,NPCProcGen.Core.Internal.Sensor,NPCProcGen.Core.Internal.Memorizer)
+  commentId: M:NPCProcGen.Core.Traits.Trait.#ctor(NPCProcGen.NPCAgent2D,System.Single,NPCProcGen.Core.Internal.Sensor,NPCProcGen.Core.Internal.Memorizer)
+  id: '#ctor(NPCProcGen.NPCAgent2D,System.Single,NPCProcGen.Core.Internal.Sensor,NPCProcGen.Core.Internal.Memorizer)'
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: Trait(NPCAgent2D, float, Sensor, Memorizer)
+  nameWithType: Trait.Trait(NPCAgent2D, float, Sensor, Memorizer)
+  fullName: NPCProcGen.Core.Traits.Trait.Trait(NPCProcGen.NPCAgent2D, float, NPCProcGen.Core.Internal.Sensor, NPCProcGen.Core.Internal.Memorizer)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 24
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.Traits.Trait" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public Trait(NPCAgent2D owner, float weight, Sensor sensor, Memorizer memorizer)
+    parameters:
+    - id: owner
+      type: NPCProcGen.NPCAgent2D
+      description: The owner of the trait.
+    - id: weight
+      type: System.Single
+      description: The weight of the trait.
+    - id: sensor
+      type: NPCProcGen.Core.Internal.Sensor
+      description: The sensor associated with the trait.
+    - id: memorizer
+      type: NPCProcGen.Core.Internal.Memorizer
+      description: The memorizer associated with the trait.
+    content.vb: Public Sub New(owner As NPCAgent2D, weight As Single, sensor As Sensor, memorizer As Memorizer)
+  overload: NPCProcGen.Core.Traits.Trait.#ctor*
+  nameWithType.vb: Trait.New(NPCAgent2D, Single, Sensor, Memorizer)
+  fullName.vb: NPCProcGen.Core.Traits.Trait.New(NPCProcGen.NPCAgent2D, Single, NPCProcGen.Core.Internal.Sensor, NPCProcGen.Core.Internal.Memorizer)
+  name.vb: New(NPCAgent2D, Single, Sensor, Memorizer)
+- uid: NPCProcGen.Core.Traits.Trait.EvaluateAction(NPCProcGen.Core.Components.Enums.SocialPractice)
+  commentId: M:NPCProcGen.Core.Traits.Trait.EvaluateAction(NPCProcGen.Core.Components.Enums.SocialPractice)
+  id: EvaluateAction(NPCProcGen.Core.Components.Enums.SocialPractice)
+  parent: NPCProcGen.Core.Traits.Trait
+  langs:
+  - csharp
+  - vb
+  name: EvaluateAction(SocialPractice)
+  nameWithType: Trait.EvaluateAction(SocialPractice)
+  fullName: NPCProcGen.Core.Traits.Trait.EvaluateAction(NPCProcGen.Core.Components.Enums.SocialPractice)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Traits/Trait.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: EvaluateAction
+    path: ../addons/NPCProcGen/Core/Traits/Trait.cs
+    startLine: 37
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Traits
+  summary: Evaluates an action based on the given social practice.
+  example: []
+  syntax:
+    content: public abstract Tuple<BaseAction, float> EvaluateAction(SocialPractice practice)
+    parameters:
+    - id: practice
+      type: NPCProcGen.Core.Components.Enums.SocialPractice
+      description: The social practice to evaluate.
+    return:
+      type: System.Tuple{NPCProcGen.Core.Actions.BaseAction,System.Single}
+      description: A tuple containing the evaluated action and its weight.
+    content.vb: Public MustOverride Function EvaluateAction(practice As SocialPractice) As Tuple(Of BaseAction, Single)
+  overload: NPCProcGen.Core.Traits.Trait.EvaluateAction*
+references:
+- uid: NPCProcGen.Core.Traits
+  commentId: N:NPCProcGen.Core.Traits
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Traits
+  nameWithType: NPCProcGen.Core.Traits
+  fullName: NPCProcGen.Core.Traits
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Traits
+    name: Traits
+    href: NPCProcGen.Core.Traits.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Traits
+    name: Traits
+    href: NPCProcGen.Core.Traits.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.NPCAgent2D
+  commentId: T:NPCProcGen.NPCAgent2D
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D
+  nameWithType: NPCAgent2D
+  fullName: NPCProcGen.NPCAgent2D
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: NPCProcGen.Core.Internal.Sensor
+  commentId: T:NPCProcGen.Core.Internal.Sensor
+  parent: NPCProcGen.Core.Internal
+  href: NPCProcGen.Core.Internal.Sensor.html
+  name: Sensor
+  nameWithType: Sensor
+  fullName: NPCProcGen.Core.Internal.Sensor
+- uid: NPCProcGen.Core.Internal
+  commentId: N:NPCProcGen.Core.Internal
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Internal
+  nameWithType: NPCProcGen.Core.Internal
+  fullName: NPCProcGen.Core.Internal
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Internal
+    name: Internal
+    href: NPCProcGen.Core.Internal.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Internal
+    name: Internal
+    href: NPCProcGen.Core.Internal.html
+- uid: NPCProcGen.Core.Internal.Memorizer
+  commentId: T:NPCProcGen.Core.Internal.Memorizer
+  parent: NPCProcGen.Core.Internal
+  href: NPCProcGen.Core.Internal.Memorizer.html
+  name: Memorizer
+  nameWithType: Memorizer
+  fullName: NPCProcGen.Core.Internal.Memorizer
+- uid: NPCProcGen.Core.Traits.Trait
+  commentId: T:NPCProcGen.Core.Traits.Trait
+  parent: NPCProcGen.Core.Traits
+  href: NPCProcGen.Core.Traits.Trait.html
+  name: Trait
+  nameWithType: Trait
+  fullName: NPCProcGen.Core.Traits.Trait
+- uid: NPCProcGen.Core.Traits.Trait.#ctor*
+  commentId: Overload:NPCProcGen.Core.Traits.Trait.#ctor
+  href: NPCProcGen.Core.Traits.Trait.html#NPCProcGen_Core_Traits_Trait__ctor_NPCProcGen_NPCAgent2D_System_Single_NPCProcGen_Core_Internal_Sensor_NPCProcGen_Core_Internal_Memorizer_
+  name: Trait
+  nameWithType: Trait.Trait
+  fullName: NPCProcGen.Core.Traits.Trait.Trait
+  nameWithType.vb: Trait.New
+  fullName.vb: NPCProcGen.Core.Traits.Trait.New
+  name.vb: New
+- uid: NPCProcGen.Core.Traits.Trait.EvaluateAction*
+  commentId: Overload:NPCProcGen.Core.Traits.Trait.EvaluateAction
+  href: NPCProcGen.Core.Traits.Trait.html#NPCProcGen_Core_Traits_Trait_EvaluateAction_NPCProcGen_Core_Components_Enums_SocialPractice_
+  name: EvaluateAction
+  nameWithType: Trait.EvaluateAction
+  fullName: NPCProcGen.Core.Traits.Trait.EvaluateAction
+- uid: NPCProcGen.Core.Components.Enums.SocialPractice
+  commentId: T:NPCProcGen.Core.Components.Enums.SocialPractice
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.SocialPractice.html
+  name: SocialPractice
+  nameWithType: SocialPractice
+  fullName: NPCProcGen.Core.Components.Enums.SocialPractice
+- uid: System.Tuple{NPCProcGen.Core.Actions.BaseAction,System.Single}
+  commentId: T:System.Tuple{NPCProcGen.Core.Actions.BaseAction,System.Single}
+  parent: System
+  definition: System.Tuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<BaseAction, float>
+  nameWithType: Tuple<BaseAction, float>
+  fullName: System.Tuple<NPCProcGen.Core.Actions.BaseAction, float>
+  nameWithType.vb: Tuple(Of BaseAction, Single)
+  fullName.vb: System.Tuple(Of NPCProcGen.Core.Actions.BaseAction, Single)
+  name.vb: Tuple(Of BaseAction, Single)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: NPCProcGen.Core.Actions.BaseAction
+    name: BaseAction
+    href: NPCProcGen.Core.Actions.BaseAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.Core.Actions.BaseAction
+    name: BaseAction
+    href: NPCProcGen.Core.Actions.BaseAction.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+- uid: System.Tuple`2
+  commentId: T:System.Tuple`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<T1, T2>
+  nameWithType: Tuple<T1, T2>
+  fullName: System.Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+  fullName.vb: System.Tuple(Of T1, T2)
+  name.vb: Tuple(Of T1, T2)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

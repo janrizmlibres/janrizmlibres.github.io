@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components
+  commentId: N:NPCProcGen.Core.Components
+  id: NPCProcGen.Core.Components
+  children:
+  - NPCProcGen.Core.Components.ActorData
+  - NPCProcGen.Core.Components.ResourceStat
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Components
+  nameWithType: NPCProcGen.Core.Components
+  fullName: NPCProcGen.Core.Components
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Components.ActorData
+  commentId: T:NPCProcGen.Core.Components.ActorData
+  href: NPCProcGen.Core.Components.ActorData.html
+  name: ActorData
+  nameWithType: ActorData
+  fullName: NPCProcGen.Core.Components.ActorData
+- uid: NPCProcGen.Core.Components.ResourceStat
+  commentId: T:NPCProcGen.Core.Components.ResourceStat
+  parent: NPCProcGen.Core.Components
+  href: NPCProcGen.Core.Components.ResourceStat.html
+  name: ResourceStat
+  nameWithType: ResourceStat
+  fullName: NPCProcGen.Core.Components.ResourceStat
+- uid: NPCProcGen.Core.Components
+  commentId: N:NPCProcGen.Core.Components
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components
+  nameWithType: NPCProcGen.Core.Components
+  fullName: NPCProcGen.Core.Components
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html

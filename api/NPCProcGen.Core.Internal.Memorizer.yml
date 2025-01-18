@@ -1,0 +1,1070 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Internal.Memorizer
+  commentId: T:NPCProcGen.Core.Internal.Memorizer
+  id: Memorizer
+  parent: NPCProcGen.Core.Internal
+  children:
+  - NPCProcGen.Core.Internal.Memorizer.GetActorLocation(NPCProcGen.ActorTag2D)
+  - NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})
+  - NPCProcGen.Core.Internal.Memorizer.IsClose(NPCProcGen.ActorTag2D)
+  - NPCProcGen.Core.Internal.Memorizer.IsFriendly(NPCProcGen.ActorTag2D)
+  - NPCProcGen.Core.Internal.Memorizer.IsTrusted(NPCProcGen.ActorTag2D)
+  - NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+  - NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+  - NPCProcGen.Core.Internal.Memorizer.Update(System.Double)
+  - NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation(NPCProcGen.ActorTag2D,Godot.Vector2)
+  - NPCProcGen.Core.Internal.Memorizer._actorData
+  langs:
+  - csharp
+  - vb
+  name: Memorizer
+  nameWithType: Memorizer
+  fullName: NPCProcGen.Core.Internal.Memorizer
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Memorizer
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 11
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: The Memorizer class is responsible for managing long-term and short-term memories of actors.
+  example: []
+  syntax:
+    content: public class Memorizer
+    content.vb: Public Class Memorizer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+  commentId: P:NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+  id: LongTermMemory
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: LongTermMemory
+  nameWithType: Memorizer.LongTermMemory
+  fullName: NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: LongTermMemory
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 16
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Gets the list of long-term memories.
+  example: []
+  syntax:
+    content: public List<Event> LongTermMemory { get; private set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{NPCProcGen.Core.Events.Event}
+    content.vb: Public Property LongTermMemory As List(Of [Event])
+  overload: NPCProcGen.Core.Internal.Memorizer.LongTermMemory*
+- uid: NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+  commentId: P:NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+  id: ShortTermMemory
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: ShortTermMemory
+  nameWithType: Memorizer.ShortTermMemory
+  fullName: NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+  type: Property
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: ShortTermMemory
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 21
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Gets the linked list of short-term memories.
+  example: []
+  syntax:
+    content: public LinkedList<Event> ShortTermMemory { get; private set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.LinkedList{NPCProcGen.Core.Events.Event}
+    content.vb: Public Property ShortTermMemory As LinkedList(Of [Event])
+  overload: NPCProcGen.Core.Internal.Memorizer.ShortTermMemory*
+- uid: NPCProcGen.Core.Internal.Memorizer._actorData
+  commentId: F:NPCProcGen.Core.Internal.Memorizer._actorData
+  id: _actorData
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: _actorData
+  nameWithType: Memorizer._actorData
+  fullName: NPCProcGen.Core.Internal.Memorizer._actorData
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _actorData
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 26
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Dictionary to store actor data.
+  example: []
+  syntax:
+    content: private readonly Dictionary<ActorTag2D, ActorData> _actorData
+    return:
+      type: System.Collections.Generic.Dictionary{NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.ActorData}
+    content.vb: Private ReadOnly _actorData As Dictionary(Of ActorTag2D, ActorData)
+- uid: NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})
+  id: Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: Initialize(List<ActorTag2D>)
+  nameWithType: Memorizer.Initialize(List<ActorTag2D>)
+  fullName: NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List<NPCProcGen.ActorTag2D>)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Initialize
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 32
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Initializes the memorizer with a list of actors.
+  example: []
+  syntax:
+    content: public void Initialize(List<ActorTag2D> actors)
+    parameters:
+    - id: actors
+      type: System.Collections.Generic.List{NPCProcGen.ActorTag2D}
+      description: The list of actors to initialize.
+    content.vb: Public Sub Initialize(actors As List(Of ActorTag2D))
+  overload: NPCProcGen.Core.Internal.Memorizer.Initialize*
+  nameWithType.vb: Memorizer.Initialize(List(Of ActorTag2D))
+  fullName.vb: NPCProcGen.Core.Internal.Memorizer.Initialize(System.Collections.Generic.List(Of NPCProcGen.ActorTag2D))
+  name.vb: Initialize(List(Of ActorTag2D))
+- uid: NPCProcGen.Core.Internal.Memorizer.Update(System.Double)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.Update(System.Double)
+  id: Update(System.Double)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: Update(double)
+  nameWithType: Memorizer.Update(double)
+  fullName: NPCProcGen.Core.Internal.Memorizer.Update(double)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Update
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 44
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Updates the memorizer with the given delta time.
+  example: []
+  syntax:
+    content: public void Update(double delta)
+    parameters:
+    - id: delta
+      type: System.Double
+      description: The delta time to update with.
+    content.vb: Public Sub Update(delta As Double)
+  overload: NPCProcGen.Core.Internal.Memorizer.Update*
+  nameWithType.vb: Memorizer.Update(Double)
+  fullName.vb: NPCProcGen.Core.Internal.Memorizer.Update(Double)
+  name.vb: Update(Double)
+- uid: NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation(NPCProcGen.ActorTag2D,Godot.Vector2)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation(NPCProcGen.ActorTag2D,Godot.Vector2)
+  id: UpdateActorLocation(NPCProcGen.ActorTag2D,Godot.Vector2)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: UpdateActorLocation(ActorTag2D, Vector2)
+  nameWithType: Memorizer.UpdateActorLocation(ActorTag2D, Vector2)
+  fullName: NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation(NPCProcGen.ActorTag2D, Godot.Vector2)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: UpdateActorLocation
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 58
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Updates the location of the specified actor.
+  example: []
+  syntax:
+    content: public void UpdateActorLocation(ActorTag2D actor, Vector2 location)
+    parameters:
+    - id: actor
+      type: NPCProcGen.ActorTag2D
+      description: The actor to update the location for.
+    - id: location
+      type: Godot.Vector2
+      description: The new location of the actor.
+    content.vb: Public Sub UpdateActorLocation(actor As ActorTag2D, location As Vector2)
+  overload: NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation*
+- uid: NPCProcGen.Core.Internal.Memorizer.GetActorLocation(NPCProcGen.ActorTag2D)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.GetActorLocation(NPCProcGen.ActorTag2D)
+  id: GetActorLocation(NPCProcGen.ActorTag2D)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: GetActorLocation(ActorTag2D)
+  nameWithType: Memorizer.GetActorLocation(ActorTag2D)
+  fullName: NPCProcGen.Core.Internal.Memorizer.GetActorLocation(NPCProcGen.ActorTag2D)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: GetActorLocation
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 69
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Gets the last known location of the specified actor.
+  example: []
+  syntax:
+    content: public Vector2? GetActorLocation(ActorTag2D actor)
+    parameters:
+    - id: actor
+      type: NPCProcGen.ActorTag2D
+      description: The actor to get the location for.
+    return:
+      type: System.Nullable{Godot.Vector2}
+      description: The last known location of the actor, or null if not found.
+    content.vb: Public Function GetActorLocation(actor As ActorTag2D) As Vector2?
+  overload: NPCProcGen.Core.Internal.Memorizer.GetActorLocation*
+- uid: NPCProcGen.Core.Internal.Memorizer.IsFriendly(NPCProcGen.ActorTag2D)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.IsFriendly(NPCProcGen.ActorTag2D)
+  id: IsFriendly(NPCProcGen.ActorTag2D)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: IsFriendly(ActorTag2D)
+  nameWithType: Memorizer.IsFriendly(ActorTag2D)
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsFriendly(NPCProcGen.ActorTag2D)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsFriendly
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 79
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Determines if the specified actor is friendly.
+  example: []
+  syntax:
+    content: public bool IsFriendly(ActorTag2D actor)
+    parameters:
+    - id: actor
+      type: NPCProcGen.ActorTag2D
+      description: The actor to check.
+    return:
+      type: System.Boolean
+      description: True if the actor is friendly, otherwise false.
+    content.vb: Public Function IsFriendly(actor As ActorTag2D) As Boolean
+  overload: NPCProcGen.Core.Internal.Memorizer.IsFriendly*
+- uid: NPCProcGen.Core.Internal.Memorizer.IsTrusted(NPCProcGen.ActorTag2D)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.IsTrusted(NPCProcGen.ActorTag2D)
+  id: IsTrusted(NPCProcGen.ActorTag2D)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: IsTrusted(ActorTag2D)
+  nameWithType: Memorizer.IsTrusted(ActorTag2D)
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsTrusted(NPCProcGen.ActorTag2D)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsTrusted
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 89
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Determines if the specified actor is trusted.
+  example: []
+  syntax:
+    content: public bool IsTrusted(ActorTag2D actor)
+    parameters:
+    - id: actor
+      type: NPCProcGen.ActorTag2D
+      description: The actor to check.
+    return:
+      type: System.Boolean
+      description: True if the actor is trusted, otherwise false.
+    content.vb: Public Function IsTrusted(actor As ActorTag2D) As Boolean
+  overload: NPCProcGen.Core.Internal.Memorizer.IsTrusted*
+- uid: NPCProcGen.Core.Internal.Memorizer.IsClose(NPCProcGen.ActorTag2D)
+  commentId: M:NPCProcGen.Core.Internal.Memorizer.IsClose(NPCProcGen.ActorTag2D)
+  id: IsClose(NPCProcGen.ActorTag2D)
+  parent: NPCProcGen.Core.Internal.Memorizer
+  langs:
+  - csharp
+  - vb
+  name: IsClose(ActorTag2D)
+  nameWithType: Memorizer.IsClose(ActorTag2D)
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsClose(NPCProcGen.ActorTag2D)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Internal/Memorizer.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: IsClose
+    path: ../addons/NPCProcGen/Core/Internal/Memorizer.cs
+    startLine: 99
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Internal
+  summary: Determines if the specified actor is close.
+  example: []
+  syntax:
+    content: public bool IsClose(ActorTag2D actor)
+    parameters:
+    - id: actor
+      type: NPCProcGen.ActorTag2D
+      description: The actor to check.
+    return:
+      type: System.Boolean
+      description: True if the actor is close, otherwise false.
+    content.vb: Public Function IsClose(actor As ActorTag2D) As Boolean
+  overload: NPCProcGen.Core.Internal.Memorizer.IsClose*
+references:
+- uid: NPCProcGen.Core.Internal
+  commentId: N:NPCProcGen.Core.Internal
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Internal
+  nameWithType: NPCProcGen.Core.Internal
+  fullName: NPCProcGen.Core.Internal
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Internal
+    name: Internal
+    href: NPCProcGen.Core.Internal.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Internal
+    name: Internal
+    href: NPCProcGen.Core.Internal.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.Core.Internal.Memorizer.LongTermMemory*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_LongTermMemory
+  name: LongTermMemory
+  nameWithType: Memorizer.LongTermMemory
+  fullName: NPCProcGen.Core.Internal.Memorizer.LongTermMemory
+- uid: System.Collections.Generic.List{NPCProcGen.Core.Events.Event}
+  commentId: T:System.Collections.Generic.List{NPCProcGen.Core.Events.Event}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Event>
+  nameWithType: List<Event>
+  fullName: System.Collections.Generic.List<NPCProcGen.Core.Events.Event>
+  nameWithType.vb: List(Of Event)
+  fullName.vb: System.Collections.Generic.List(Of NPCProcGen.Core.Events.Event)
+  name.vb: List(Of Event)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NPCProcGen.Core.Events.Event
+    name: Event
+    href: NPCProcGen.Core.Events.Event.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.Core.Events.Event
+    name: Event
+    href: NPCProcGen.Core.Events.Event.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: NPCProcGen.Core.Internal.Memorizer.ShortTermMemory*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_ShortTermMemory
+  name: ShortTermMemory
+  nameWithType: Memorizer.ShortTermMemory
+  fullName: NPCProcGen.Core.Internal.Memorizer.ShortTermMemory
+- uid: System.Collections.Generic.LinkedList{NPCProcGen.Core.Events.Event}
+  commentId: T:System.Collections.Generic.LinkedList{NPCProcGen.Core.Events.Event}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.LinkedList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  name: LinkedList<Event>
+  nameWithType: LinkedList<Event>
+  fullName: System.Collections.Generic.LinkedList<NPCProcGen.Core.Events.Event>
+  nameWithType.vb: LinkedList(Of Event)
+  fullName.vb: System.Collections.Generic.LinkedList(Of NPCProcGen.Core.Events.Event)
+  name.vb: LinkedList(Of Event)
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  - name: <
+  - uid: NPCProcGen.Core.Events.Event
+    name: Event
+    href: NPCProcGen.Core.Events.Event.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.Core.Events.Event
+    name: Event
+    href: NPCProcGen.Core.Events.Event.html
+  - name: )
+- uid: System.Collections.Generic.LinkedList`1
+  commentId: T:System.Collections.Generic.LinkedList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  name: LinkedList<T>
+  nameWithType: LinkedList<T>
+  fullName: System.Collections.Generic.LinkedList<T>
+  nameWithType.vb: LinkedList(Of T)
+  fullName.vb: System.Collections.Generic.LinkedList(Of T)
+  name.vb: LinkedList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.Dictionary{NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.ActorData}
+  commentId: T:System.Collections.Generic.Dictionary{NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.ActorData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<ActorTag2D, ActorData>
+  nameWithType: Dictionary<ActorTag2D, ActorData>
+  fullName: System.Collections.Generic.Dictionary<NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.ActorData>
+  nameWithType.vb: Dictionary(Of ActorTag2D, ActorData)
+  fullName.vb: System.Collections.Generic.Dictionary(Of NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.ActorData)
+  name.vb: Dictionary(Of ActorTag2D, ActorData)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: NPCProcGen.ActorTag2D
+    name: ActorTag2D
+    href: NPCProcGen.ActorTag2D.html
+  - name: ','
+  - name: " "
+  - uid: NPCProcGen.Core.Components.ActorData
+    name: ActorData
+    href: NPCProcGen.Core.Components.ActorData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.ActorTag2D
+    name: ActorTag2D
+    href: NPCProcGen.ActorTag2D.html
+  - name: ','
+  - name: " "
+  - uid: NPCProcGen.Core.Components.ActorData
+    name: ActorData
+    href: NPCProcGen.Core.Components.ActorData.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: NPCProcGen.Core.Internal.Memorizer.Initialize*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.Initialize
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_Initialize_System_Collections_Generic_List_NPCProcGen_ActorTag2D__
+  name: Initialize
+  nameWithType: Memorizer.Initialize
+  fullName: NPCProcGen.Core.Internal.Memorizer.Initialize
+- uid: System.Collections.Generic.List{NPCProcGen.ActorTag2D}
+  commentId: T:System.Collections.Generic.List{NPCProcGen.ActorTag2D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ActorTag2D>
+  nameWithType: List<ActorTag2D>
+  fullName: System.Collections.Generic.List<NPCProcGen.ActorTag2D>
+  nameWithType.vb: List(Of ActorTag2D)
+  fullName.vb: System.Collections.Generic.List(Of NPCProcGen.ActorTag2D)
+  name.vb: List(Of ActorTag2D)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: NPCProcGen.ActorTag2D
+    name: ActorTag2D
+    href: NPCProcGen.ActorTag2D.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: NPCProcGen.ActorTag2D
+    name: ActorTag2D
+    href: NPCProcGen.ActorTag2D.html
+  - name: )
+- uid: NPCProcGen.Core.Internal.Memorizer.Update*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.Update
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_Update_System_Double_
+  name: Update
+  nameWithType: Memorizer.Update
+  fullName: NPCProcGen.Core.Internal.Memorizer.Update
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_UpdateActorLocation_NPCProcGen_ActorTag2D_Godot_Vector2_
+  name: UpdateActorLocation
+  nameWithType: Memorizer.UpdateActorLocation
+  fullName: NPCProcGen.Core.Internal.Memorizer.UpdateActorLocation
+- uid: NPCProcGen.ActorTag2D
+  commentId: T:NPCProcGen.ActorTag2D
+  parent: NPCProcGen
+  href: NPCProcGen.ActorTag2D.html
+  name: ActorTag2D
+  nameWithType: ActorTag2D
+  fullName: NPCProcGen.ActorTag2D
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: NPCProcGen.Core.Internal.Memorizer.GetActorLocation*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.GetActorLocation
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_GetActorLocation_NPCProcGen_ActorTag2D_
+  name: GetActorLocation
+  nameWithType: Memorizer.GetActorLocation
+  fullName: NPCProcGen.Core.Internal.Memorizer.GetActorLocation
+- uid: System.Nullable{Godot.Vector2}
+  commentId: T:System.Nullable{Godot.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: Godot.Vector2?
+  spec.csharp:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: Godot.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: NPCProcGen.Core.Internal.Memorizer.IsFriendly*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.IsFriendly
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_IsFriendly_NPCProcGen_ActorTag2D_
+  name: IsFriendly
+  nameWithType: Memorizer.IsFriendly
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsFriendly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: NPCProcGen.Core.Internal.Memorizer.IsTrusted*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.IsTrusted
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_IsTrusted_NPCProcGen_ActorTag2D_
+  name: IsTrusted
+  nameWithType: Memorizer.IsTrusted
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsTrusted
+- uid: NPCProcGen.Core.Internal.Memorizer.IsClose*
+  commentId: Overload:NPCProcGen.Core.Internal.Memorizer.IsClose
+  href: NPCProcGen.Core.Internal.Memorizer.html#NPCProcGen_Core_Internal_Memorizer_IsClose_NPCProcGen_ActorTag2D_
+  name: IsClose
+  nameWithType: Memorizer.IsClose
+  fullName: NPCProcGen.Core.Internal.Memorizer.IsClose

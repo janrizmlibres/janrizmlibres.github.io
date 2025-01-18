@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Components.Variants
+  commentId: N:NPCProcGen.Core.Components.Variants
+  id: NPCProcGen.Core.Components.Variants
+  children:
+  - NPCProcGen.Core.Components.Variants.TheftData
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Core.Components.Variants
+  nameWithType: NPCProcGen.Core.Components.Variants
+  fullName: NPCProcGen.Core.Components.Variants
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Core.Components.Variants.TheftData
+  commentId: T:NPCProcGen.Core.Components.Variants.TheftData
+  parent: NPCProcGen.Core.Components.Variants
+  href: NPCProcGen.Core.Components.Variants.TheftData.html
+  name: TheftData
+  nameWithType: TheftData
+  fullName: NPCProcGen.Core.Components.Variants.TheftData
+- uid: NPCProcGen.Core.Components.Variants
+  commentId: N:NPCProcGen.Core.Components.Variants
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Variants
+  nameWithType: NPCProcGen.Core.Components.Variants
+  fullName: NPCProcGen.Core.Components.Variants
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Variants
+    name: Variants
+    href: NPCProcGen.Core.Components.Variants.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Variants
+    name: Variants
+    href: NPCProcGen.Core.Components.Variants.html

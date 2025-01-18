@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NPCAgent2D | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NPCAgent2D | NPC Procedural Generation Plugin for Godot ">
+      
+      <meta name="description" content="Represents a 2D NPC agent with various traits and resource weights. Inherits from ActorTag2D.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="NPCProcGen.NPCAgent2D">
+
+
+
+  <h1 id="NPCProcGen_NPCAgent2D" data-uid="NPCProcGen.NPCAgent2D" class="text-break">
+Class NPCAgent2D  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="NPCProcGen.html">NPCProcGen</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a 2D NPC agent with various traits and resource weights.
+Inherits from ActorTag2D.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tool]
+[ScriptPath(&quot;res://addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs&quot;)]
+public class NPCAgent2D : ActorTag2D, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GodotObject</span></div>
+      <div><span class="xref">Node</span></div>
+      <div><a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></div>
+      <div><span class="xref">NPCAgent2D</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D__actorDetector" data-uid="NPCProcGen.NPCAgent2D._actorDetector">
+  _actorDetector
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Area2D _actorDetector</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Area2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D__detectedActors" data-uid="NPCProcGen.NPCAgent2D._detectedActors">
+  _detectedActors
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly List&lt;ActorTag2D&gt; _detectedActors</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D__evaluationTimer" data-uid="NPCProcGen.NPCAgent2D._evaluationTimer">
+  _evaluationTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Timer _evaluationTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Timer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_backing_ActionStateEntered" data-uid="NPCProcGen.NPCAgent2D.backing_ActionStateEntered">
+  backing_ActionStateEntered
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D.ActionStateEnteredEventHandler backing_ActionStateEntered</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.html">ActionStateEnteredEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_backing_ActionStateExited" data-uid="NPCProcGen.NPCAgent2D.backing_ActionStateExited">
+  backing_ActionStateExited
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D.ActionStateExitedEventHandler backing_ActionStateExited</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.html">ActionStateExitedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_backing_ExecutionEnded" data-uid="NPCProcGen.NPCAgent2D.backing_ExecutionEnded">
+  backing_ExecutionEnded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D.ExecutionEndedEventHandler backing_ExecutionEnded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.html">ExecutionEndedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_backing_ExecutionStarted" data-uid="NPCProcGen.NPCAgent2D.backing_ExecutionStarted">
+  backing_ExecutionStarted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D.ExecutionStartedEventHandler backing_ExecutionStarted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.html">ExecutionStartedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_backing_TheftCompleted" data-uid="NPCProcGen.NPCAgent2D.backing_TheftCompleted">
+  backing_TheftCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D.TheftCompletedEventHandler backing_TheftCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.html">TheftCompletedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="NPCProcGen_NPCAgent2D_ActorDetector_" data-uid="NPCProcGen.NPCAgent2D.ActorDetector*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_ActorDetector" data-uid="NPCProcGen.NPCAgent2D.ActorDetector">
+  ActorDetector
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the actor detector, which is an Area2D instance.
+When the actor detector is set to a new value, it updates the configuration warnings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.None, &quot;&quot;)]
+public Area2D ActorDetector { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Area2D</span></dt>
+    <dd><p>The Area2D instance representing the actor detector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Companionship_" data-uid="NPCProcGen.NPCAgent2D.Companionship*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Companionship" data-uid="NPCProcGen.NPCAgent2D.Companionship">
+  Companionship
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Companionship { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_CompanionshipValue_" data-uid="NPCProcGen.NPCAgent2D.CompanionshipValue*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_CompanionshipValue" data-uid="NPCProcGen.NPCAgent2D.CompanionshipValue">
+  CompanionshipValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the companionship value associated with this NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;1,100,&quot;)]
+public int CompanionshipValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The companionship value as an integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Executor_" data-uid="NPCProcGen.NPCAgent2D.Executor*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Executor" data-uid="NPCProcGen.NPCAgent2D.Executor">
+  Executor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the executor component of the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Executor Executor { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Internal.Executor.html">Executor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Food_" data-uid="NPCProcGen.NPCAgent2D.Food*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Food" data-uid="NPCProcGen.NPCAgent2D.Food">
+  Food
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Food { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Generous_" data-uid="NPCProcGen.NPCAgent2D.Generous*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Generous" data-uid="NPCProcGen.NPCAgent2D.Generous">
+  Generous
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Generous { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Lawful_" data-uid="NPCProcGen.NPCAgent2D.Lawful*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Lawful" data-uid="NPCProcGen.NPCAgent2D.Lawful">
+  Lawful
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Lawful { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Memorizer_" data-uid="NPCProcGen.NPCAgent2D.Memorizer*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Memorizer" data-uid="NPCProcGen.NPCAgent2D.Memorizer">
+  Memorizer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the memorizer component of the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Memorizer Memorizer { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Internal.Memorizer.html">Memorizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Money_" data-uid="NPCProcGen.NPCAgent2D.Money*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Money" data-uid="NPCProcGen.NPCAgent2D.Money">
+  Money
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExportGroup(&quot;Resource Weights&quot;, &quot;&quot;)]
+[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Money { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_NotifManager_" data-uid="NPCProcGen.NPCAgent2D.NotifManager*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_NotifManager" data-uid="NPCProcGen.NPCAgent2D.NotifManager">
+  NotifManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the notification manager of the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotifManager NotifManager { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Helpers.NotifManager.html">NotifManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Sensor_" data-uid="NPCProcGen.NPCAgent2D.Sensor*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Sensor" data-uid="NPCProcGen.NPCAgent2D.Sensor">
+  Sensor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the sensor component of the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sensor Sensor { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Internal.Sensor.html">Sensor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Social_" data-uid="NPCProcGen.NPCAgent2D.Social*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Social" data-uid="NPCProcGen.NPCAgent2D.Social">
+  Social
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Social { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Strategizer_" data-uid="NPCProcGen.NPCAgent2D.Strategizer*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Strategizer" data-uid="NPCProcGen.NPCAgent2D.Strategizer">
+  Strategizer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the strategizer component of the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Strategizer Strategizer { get; private set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.Core.Internal.Strategizer.html">Strategizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Survival_" data-uid="NPCProcGen.NPCAgent2D.Survival*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Survival" data-uid="NPCProcGen.NPCAgent2D.Survival">
+  Survival
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExportGroup(&quot;Traits&quot;, &quot;&quot;)]
+[Export(PropertyHint.Range, &quot;0.01,1,0.01&quot;)]
+public float Survival { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_TargetPosition_" data-uid="NPCProcGen.NPCAgent2D.TargetPosition*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_TargetPosition" data-uid="NPCProcGen.NPCAgent2D.TargetPosition">
+  TargetPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the target position for the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 TargetPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Thief_" data-uid="NPCProcGen.NPCAgent2D.Thief*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Thief" data-uid="NPCProcGen.NPCAgent2D.Thief">
+  Thief
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Thief { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Violent_" data-uid="NPCProcGen.NPCAgent2D.Violent*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Violent" data-uid="NPCProcGen.NPCAgent2D.Violent">
+  Violent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(PropertyHint.Range, &quot;0,1,0.01&quot;)]
+public float Violent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="NPCProcGen_NPCAgent2D_AddTraits_" data-uid="NPCProcGen.NPCAgent2D.AddTraits*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_AddTraits" data-uid="NPCProcGen.NPCAgent2D.AddTraits">
+  AddTraits()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds traits to the NPC's strategizer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void AddTraits()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_CompleteNavigation_" data-uid="NPCProcGen.NPCAgent2D.CompleteNavigation*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_CompleteNavigation" data-uid="NPCProcGen.NPCAgent2D.CompleteNavigation">
+  CompleteNavigation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Completes the navigation for the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompleteNavigation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_GetStolenResource_" data-uid="NPCProcGen.NPCAgent2D.GetStolenResource*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_GetStolenResource" data-uid="NPCProcGen.NPCAgent2D.GetStolenResource">
+  GetStolenResource()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the stolen resource by the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tuple&lt;ResourceType, float&gt; GetStolenResource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="NPCProcGen.Core.Components.Enums.ResourceType.html">ResourceType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd><p>A tuple containing the resource type and amount.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_Initialize_" data-uid="NPCProcGen.NPCAgent2D.Initialize*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_Initialize_System_Collections_Generic_List_NPCProcGen_ActorTag2D__" data-uid="NPCProcGen.NPCAgent2D.Initialize(System.Collections.Generic.List{NPCProcGen.ActorTag2D})">
+  Initialize(List&lt;ActorTag2D&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the NPC with a list of actors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(List&lt;ActorTag2D&gt; actors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a>&gt;</dt>
+    <dd><p>The list of actors to initialize with.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_IsActive_" data-uid="NPCProcGen.NPCAgent2D.IsActive*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_IsActive" data-uid="NPCProcGen.NPCAgent2D.IsActive">
+  IsActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the NPC is currently active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the NPC is active, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_IsActorInRange_" data-uid="NPCProcGen.NPCAgent2D.IsActorInRange*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_IsActorInRange_NPCProcGen_ActorTag2D_" data-uid="NPCProcGen.NPCAgent2D.IsActorInRange(NPCProcGen.ActorTag2D)">
+  IsActorInRange(ActorTag2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the specified actor is in range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActorInRange(ActorTag2D actor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actor</code> <a class="xref" href="NPCProcGen.ActorTag2D.html">ActorTag2D</a></dt>
+    <dd><p>The actor to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the actor is in range, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_IsNavigationRequired_" data-uid="NPCProcGen.NPCAgent2D.IsNavigationRequired*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_IsNavigationRequired" data-uid="NPCProcGen.NPCAgent2D.IsNavigationRequired">
+  IsNavigationRequired()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if navigation is required for the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNavigationRequired()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if navigation is required, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_OnBodyEntered_" data-uid="NPCProcGen.NPCAgent2D.OnBodyEntered*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_OnBodyEntered_Godot_Node2D_" data-uid="NPCProcGen.NPCAgent2D.OnBodyEntered(Godot.Node2D)">
+  OnBodyEntered(Node2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnBodyEntered(Node2D body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>body</code> <span class="xref">Node2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_OnBodyExited_" data-uid="NPCProcGen.NPCAgent2D.OnBodyExited*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_OnBodyExited_Godot_Node2D_" data-uid="NPCProcGen.NPCAgent2D.OnBodyExited(Godot.Node2D)">
+  OnBodyExited(Node2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the body exited event for the actor detector.
+Updates the memorizer with the actor's location and removes the actor from the detected list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnBodyExited(Node2D body)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>body</code> <span class="xref">Node2D</span></dt>
+    <dd><p>The body that exited the actor detector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_OnEvaluationTimerTimeout_" data-uid="NPCProcGen.NPCAgent2D.OnEvaluationTimerTimeout*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_OnEvaluationTimerTimeout" data-uid="NPCProcGen.NPCAgent2D.OnEvaluationTimerTimeout">
+  OnEvaluationTimerTimeout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the evaluation timer timeout event.
+Evaluates an action for the NPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnEvaluationTimerTimeout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="NPCProcGen_NPCAgent2D_OnExecutionEnded_" data-uid="NPCProcGen.NPCAgent2D.OnExecutionEnded*"></a>
+
+  <h3 id="NPCProcGen_NPCAgent2D_OnExecutionEnded" data-uid="NPCProcGen.NPCAgent2D.OnExecutionEnded">
+  OnExecutionEnded()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the execution ended event.
+Starts the evaluation timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnExecutionEnded()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_ActionStateEntered" data-uid="NPCProcGen.NPCAgent2D.ActionStateEntered">
+  ActionStateEntered
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NPCAgent2D.ActionStateEnteredEventHandler ActionStateEntered</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.html">ActionStateEnteredEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_ActionStateExited" data-uid="NPCProcGen.NPCAgent2D.ActionStateExited">
+  ActionStateExited
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NPCAgent2D.ActionStateExitedEventHandler ActionStateExited</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.html">ActionStateExitedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_ExecutionEnded" data-uid="NPCProcGen.NPCAgent2D.ExecutionEnded">
+  ExecutionEnded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NPCAgent2D.ExecutionEndedEventHandler ExecutionEnded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.html">ExecutionEndedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_ExecutionStarted" data-uid="NPCProcGen.NPCAgent2D.ExecutionStarted">
+  ExecutionStarted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NPCAgent2D.ExecutionStartedEventHandler ExecutionStarted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.html">ExecutionStartedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="NPCProcGen_NPCAgent2D_TheftCompleted" data-uid="NPCProcGen.NPCAgent2D.TheftCompleted">
+  TheftCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NPCAgent2D.TheftCompletedEventHandler TheftCompleted</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a>.<a class="xref" href="NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.html">TheftCompletedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

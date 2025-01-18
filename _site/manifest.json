@@ -1,0 +1,798 @@
+{
+  "source_base_path": "D:/dev/Games/Godot/Emergent Echoes/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Actors.NPC.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Actors.NPC.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Actors.NPC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Actors.NPC.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Actors.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Actors.Player.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Actors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Actors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Camera.Camera2d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Camera.Camera2d.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.Camera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.Camera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.UI.Indicators.EmoteBubble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.UI.Indicators.EmoteBubble.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.UI.Indicators.FloatingText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.UI.Indicators.FloatingText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Entities.UI.Indicators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Entities.UI.Indicators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Stages.Island.World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Stages.Island.World.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Stages.Island.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Stages.Island.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Utilities.EmoteManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Utilities.EmoteManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Utilities.Enums.Emote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Utilities.Enums.Emote.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Utilities.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Utilities.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Utilities.FloatTextManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Utilities.FloatTextManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EmergentEchoes.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EmergentEchoes.Utilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.ActorTag2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.ActorTag2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Autoloads.AutoloadInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Autoloads.AutoloadInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Autoloads.ResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Autoloads.ResourceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Autoloads.WorldState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Autoloads.WorldState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Autoloads.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Autoloads.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Actions.BaseAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Actions.BaseAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Actions.TheftAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Actions.TheftAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Actions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Actions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.ActorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.ActorData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.ActionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.ActionState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.ActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.ActionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.CrimeCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.CrimeCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.ResourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.ResourceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.SocialPractice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.SocialPractice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Records.Crime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Records.Crime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Records.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Records.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.ResourceStat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.ResourceStat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Variants.TheftData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Variants.TheftData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.Variants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.Variants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.Event.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.IGeneralEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.IGeneralEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.IPerspectiveEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.IPerspectiveEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.MoveEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.MoveEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.PetitionRefusalEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.PetitionRefusalEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Helpers.CommonUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Helpers.CommonUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Helpers.DebugTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Helpers.DebugTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Helpers.NotifManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Helpers.NotifManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Internal.Executor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Internal.Executor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Internal.Memorizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Internal.Memorizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Internal.Sensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Internal.Sensor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Internal.Strategizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Internal.Strategizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Internal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.BaseState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.BaseState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.FleeState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.FleeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.INavigationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.INavigationState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.MoveState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.MoveState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.StealState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.StealState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.WanderState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.WanderState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.States.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.States.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Traits.LawfulTrait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Traits.LawfulTrait.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Traits.SurvivalTrait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Traits.SurvivalTrait.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Traits.ThiefTrait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Traits.ThiefTrait.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Traits.Trait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Traits.Trait.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.Core.Traits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.Core.Traits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.ActionStateExitedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.ExecutionEndedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.ExecutionStartedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.TheftCompletedEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.NPCAgent2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.NPCAgent2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NPCProcGen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NPCProcGen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

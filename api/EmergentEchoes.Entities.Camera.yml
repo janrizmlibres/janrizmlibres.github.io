@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Entities.Camera
+  commentId: N:EmergentEchoes.Entities.Camera
+  id: EmergentEchoes.Entities.Camera
+  children:
+  - EmergentEchoes.Entities.Camera.Camera2d
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Entities.Camera
+  nameWithType: EmergentEchoes.Entities.Camera
+  fullName: EmergentEchoes.Entities.Camera
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Entities.Camera.Camera2d
+  commentId: T:EmergentEchoes.Entities.Camera.Camera2d
+  href: EmergentEchoes.Entities.Camera.Camera2d.html
+  name: Camera2d
+  nameWithType: Camera2d
+  fullName: EmergentEchoes.Entities.Camera.Camera2d

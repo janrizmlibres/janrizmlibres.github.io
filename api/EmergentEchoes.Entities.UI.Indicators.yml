@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Entities.UI.Indicators
+  commentId: N:EmergentEchoes.Entities.UI.Indicators
+  id: EmergentEchoes.Entities.UI.Indicators
+  children:
+  - EmergentEchoes.Entities.UI.Indicators.EmoteBubble
+  - EmergentEchoes.Entities.UI.Indicators.FloatingText
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Entities.UI.Indicators
+  nameWithType: EmergentEchoes.Entities.UI.Indicators
+  fullName: EmergentEchoes.Entities.UI.Indicators
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Entities.UI.Indicators.EmoteBubble
+  commentId: T:EmergentEchoes.Entities.UI.Indicators.EmoteBubble
+  href: EmergentEchoes.Entities.UI.Indicators.EmoteBubble.html
+  name: EmoteBubble
+  nameWithType: EmoteBubble
+  fullName: EmergentEchoes.Entities.UI.Indicators.EmoteBubble
+- uid: EmergentEchoes.Entities.UI.Indicators.FloatingText
+  commentId: T:EmergentEchoes.Entities.UI.Indicators.FloatingText
+  href: EmergentEchoes.Entities.UI.Indicators.FloatingText.html
+  name: FloatingText
+  nameWithType: FloatingText
+  fullName: EmergentEchoes.Entities.UI.Indicators.FloatingText

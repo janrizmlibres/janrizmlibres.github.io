@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Autoloads
+  commentId: N:NPCProcGen.Autoloads
+  id: NPCProcGen.Autoloads
+  children:
+  - NPCProcGen.Autoloads.AutoloadInitializer
+  - NPCProcGen.Autoloads.ResourceManager
+  - NPCProcGen.Autoloads.WorldState
+  langs:
+  - csharp
+  - vb
+  name: NPCProcGen.Autoloads
+  nameWithType: NPCProcGen.Autoloads
+  fullName: NPCProcGen.Autoloads
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: NPCProcGen.Autoloads.AutoloadInitializer
+  commentId: T:NPCProcGen.Autoloads.AutoloadInitializer
+  href: NPCProcGen.Autoloads.AutoloadInitializer.html
+  name: AutoloadInitializer
+  nameWithType: AutoloadInitializer
+  fullName: NPCProcGen.Autoloads.AutoloadInitializer
+- uid: NPCProcGen.Autoloads.ResourceManager
+  commentId: T:NPCProcGen.Autoloads.ResourceManager
+  parent: NPCProcGen.Autoloads
+  href: NPCProcGen.Autoloads.ResourceManager.html
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: NPCProcGen.Autoloads.ResourceManager
+- uid: NPCProcGen.Autoloads.WorldState
+  commentId: T:NPCProcGen.Autoloads.WorldState
+  parent: NPCProcGen.Autoloads
+  href: NPCProcGen.Autoloads.WorldState.html
+  name: WorldState
+  nameWithType: WorldState
+  fullName: NPCProcGen.Autoloads.WorldState
+- uid: NPCProcGen.Autoloads
+  commentId: N:NPCProcGen.Autoloads
+  href: NPCProcGen.html
+  name: NPCProcGen.Autoloads
+  nameWithType: NPCProcGen.Autoloads
+  fullName: NPCProcGen.Autoloads
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Autoloads
+    name: Autoloads
+    href: NPCProcGen.Autoloads.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Autoloads
+    name: Autoloads
+    href: NPCProcGen.Autoloads.html

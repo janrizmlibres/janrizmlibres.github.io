@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NPC | NPC Procedural Generation Plugin for Godot </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NPC | NPC Procedural Generation Plugin for Godot ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="NPC ProcGen">
+            NPC ProcGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="EmergentEchoes.Entities.Actors.NPC">
+
+
+
+  <h1 id="EmergentEchoes_Entities_Actors_NPC" data-uid="EmergentEchoes.Entities.Actors.NPC" class="text-break">
+Class NPC  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EmergentEchoes.html">EmergentEchoes</a>.<a class="xref" href="EmergentEchoes.Entities.html">Entities</a>.<a class="xref" href="EmergentEchoes.Entities.Actors.html">Actors</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EmergentEchoes.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ScriptPath(&quot;res://Entities/Actors/NPCs/NPC.cs&quot;)]
+public class NPC : CharacterBody2D, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GodotObject</span></div>
+      <div><span class="xref">Node</span></div>
+      <div><span class="xref">CanvasItem</span></div>
+      <div><span class="xref">Node2D</span></div>
+      <div><span class="xref">CollisionObject2D</span></div>
+      <div><span class="xref">PhysicsBody2D</span></div>
+      <div><span class="xref">CharacterBody2D</span></div>
+      <div><span class="xref">NPC</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_Acceleration" data-uid="EmergentEchoes.Entities.Actors.NPC.Acceleration">
+  Acceleration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private const int Acceleration = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_Friction" data-uid="EmergentEchoes.Entities.Actors.NPC.Friction">
+  Friction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private const int Friction = 4</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_MaxSpeed" data-uid="EmergentEchoes.Entities.Actors.NPC.MaxSpeed">
+  MaxSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private const int MaxSpeed = 60</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__animationState" data-uid="EmergentEchoes.Entities.Actors.NPC._animationState">
+  _animationState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private AnimationNodeStateMachinePlayback _animationState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationNodeStateMachinePlayback</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__animationTree" data-uid="EmergentEchoes.Entities.Actors.NPC._animationTree">
+  _animationTree
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private AnimationTree _animationTree</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AnimationTree</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__navigationAgent2d" data-uid="EmergentEchoes.Entities.Actors.NPC._navigationAgent2d">
+  _navigationAgent2d
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NavigationAgent2D _navigationAgent2d</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">NavigationAgent2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__npcAgent2d" data-uid="EmergentEchoes.Entities.Actors.NPC._npcAgent2d">
+  _npcAgent2d
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private NPCAgent2D _npcAgent2d</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="NPCProcGen.NPCAgent2D.html">NPCAgent2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__stateTimer" data-uid="EmergentEchoes.Entities.Actors.NPC._stateTimer">
+  _stateTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Timer _stateTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Timer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__tileMapLayer" data-uid="EmergentEchoes.Entities.Actors.NPC._tileMapLayer">
+  _tileMapLayer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private TileMapLayer _tileMapLayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TileMapLayer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__validTilePositions" data-uid="EmergentEchoes.Entities.Actors.NPC._validTilePositions">
+  _validTilePositions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private readonly Array&lt;Vector2I&gt; _validTilePositions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Array</span>&lt;<span class="xref">Vector2I</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_ChangeState_" data-uid="EmergentEchoes.Entities.Actors.NPC.ChangeState*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_ChangeState" data-uid="EmergentEchoes.Entities.Actors.NPC.ChangeState">
+  ChangeState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ChangeState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_ExecuteNPCAction_" data-uid="EmergentEchoes.Entities.Actors.NPC.ExecuteNPCAction*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_ExecuteNPCAction" data-uid="EmergentEchoes.Entities.Actors.NPC.ExecuteNPCAction">
+  ExecuteNPCAction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ExecuteNPCAction()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_HandleAnimation_" data-uid="EmergentEchoes.Entities.Actors.NPC.HandleAnimation*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_HandleAnimation" data-uid="EmergentEchoes.Entities.Actors.NPC.HandleAnimation">
+  HandleAnimation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void HandleAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_IdleState_" data-uid="EmergentEchoes.Entities.Actors.NPC.IdleState*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_IdleState" data-uid="EmergentEchoes.Entities.Actors.NPC.IdleState">
+  IdleState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void IdleState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_MoveCharacter_" data-uid="EmergentEchoes.Entities.Actors.NPC.MoveCharacter*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_MoveCharacter" data-uid="EmergentEchoes.Entities.Actors.NPC.MoveCharacter">
+  MoveCharacter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void MoveCharacter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnActionStateEntered_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnActionStateEntered*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnActionStateEntered_Godot_Variant_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnActionStateEntered(Godot.Variant)">
+  OnActionStateEntered(Variant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnActionStateEntered(Variant state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <span class="xref">Variant</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnActionStateExited_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnActionStateExited*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnActionStateExited_Godot_Variant_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnActionStateExited(Godot.Variant)">
+  OnActionStateExited(Variant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnActionStateExited(Variant state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <span class="xref">Variant</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnExecutionEnded_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnExecutionEnded*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnExecutionEnded_Godot_Variant_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnExecutionEnded(Godot.Variant)">
+  OnExecutionEnded(Variant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnExecutionEnded(Variant action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <span class="xref">Variant</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnExecutionStarted_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnExecutionStarted*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnExecutionStarted_Godot_Variant_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnExecutionStarted(Godot.Variant)">
+  OnExecutionStarted(Variant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnExecutionStarted(Variant action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <span class="xref">Variant</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnNavigationAgentVelocityComputed_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnNavigationAgentVelocityComputed*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnNavigationAgentVelocityComputed_Godot_Vector2_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnNavigationAgentVelocityComputed(Godot.Vector2)">
+  OnNavigationAgentVelocityComputed(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnNavigationAgentVelocityComputed(Vector2 safeVelocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>safeVelocity</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnNavigationFinished_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnNavigationFinished*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnNavigationFinished" data-uid="EmergentEchoes.Entities.Actors.NPC.OnNavigationFinished">
+  OnNavigationFinished()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnNavigationFinished()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_OnTheftCompleted_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnTheftCompleted*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_OnTheftCompleted_NPCProcGen_Core_Components_Variants_TheftData_" data-uid="EmergentEchoes.Entities.Actors.NPC.OnTheftCompleted(NPCProcGen.Core.Components.Variants.TheftData)">
+  OnTheftCompleted(TheftData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void OnTheftCompleted(TheftData theftData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theftData</code> <a class="xref" href="NPCProcGen.Core.Components.Variants.TheftData.html">TheftData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_PickTargetPosition_" data-uid="EmergentEchoes.Entities.Actors.NPC.PickTargetPosition*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_PickTargetPosition" data-uid="EmergentEchoes.Entities.Actors.NPC.PickTargetPosition">
+  PickTargetPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2 PickTargetPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_RandomizeState_" data-uid="EmergentEchoes.Entities.Actors.NPC.RandomizeState*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_RandomizeState" data-uid="EmergentEchoes.Entities.Actors.NPC.RandomizeState">
+  RandomizeState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private static NPC.State RandomizeState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EmergentEchoes.Entities.Actors.NPC.html">NPC</a>.<a class="xref" href="EmergentEchoes.Entities.Actors.NPC.State.html">State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC_SetupTilePositions_" data-uid="EmergentEchoes.Entities.Actors.NPC.SetupTilePositions*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC_SetupTilePositions" data-uid="EmergentEchoes.Entities.Actors.NPC.SetupTilePositions">
+  SetupTilePositions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void SetupTilePositions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EmergentEchoes_Entities_Actors_NPC__PhysicsProcess_" data-uid="EmergentEchoes.Entities.Actors.NPC._PhysicsProcess*"></a>
+
+  <h3 id="EmergentEchoes_Entities_Actors_NPC__PhysicsProcess_System_Double_" data-uid="EmergentEchoes.Entities.Actors.NPC._PhysicsProcess(System.Double)">
+  _PhysicsProcess(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/janrizmlibres/emergent-echoes/blob/feat/emote-bubbles/Entities/Actors/NPCs/NPC.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called during the physics processing step of the main loop. Physics processing means that the frame rate is synced to the physics, i.e. the <code class="paramref">delta</code> variable should be constant. <code class="paramref">delta</code> is in seconds.</p>
+<p>It is only called if physics processing is enabled, which is done automatically if this method is overridden, and can be toggled with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">SetPhysicsProcess(bool)</a>.</p>
+<p>Corresponds to the <span class="xref">Godot.Node.NotificationPhysicsProcess</span> notification in <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">_Notification(int)</a>.</p>
+<p>
+  <b>Note:</b> This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void _PhysicsProcess(double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

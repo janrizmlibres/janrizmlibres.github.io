@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Utilities
+  commentId: N:EmergentEchoes.Utilities
+  id: EmergentEchoes.Utilities
+  children:
+  - EmergentEchoes.Utilities.EmoteManager
+  - EmergentEchoes.Utilities.FloatTextManager
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Utilities
+  nameWithType: EmergentEchoes.Utilities
+  fullName: EmergentEchoes.Utilities
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Utilities.EmoteManager
+  commentId: T:EmergentEchoes.Utilities.EmoteManager
+  href: EmergentEchoes.Utilities.EmoteManager.html
+  name: EmoteManager
+  nameWithType: EmoteManager
+  fullName: EmergentEchoes.Utilities.EmoteManager
+- uid: EmergentEchoes.Utilities.FloatTextManager
+  commentId: T:EmergentEchoes.Utilities.FloatTextManager
+  href: EmergentEchoes.Utilities.FloatTextManager.html
+  name: FloatTextManager
+  nameWithType: FloatTextManager
+  fullName: EmergentEchoes.Utilities.FloatTextManager

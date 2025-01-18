@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  id: NPCAgent2D.TheftCompletedEventHandler
+  parent: NPCProcGen
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NPCAgent2D.TheftCompletedEventHandler
+  nameWithType: NPCAgent2D.TheftCompletedEventHandler
+  fullName: NPCProcGen.NPCAgent2D.TheftCompletedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: TheftCompletedEventHandler
+    path: ../addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs
+    startLine: 81
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen
+  syntax:
+    content: >-
+      [Signal]
+
+      public delegate void NPCAgent2D.TheftCompletedEventHandler(TheftData theftData)
+    parameters:
+    - id: theftData
+      type: NPCProcGen.Core.Components.Variants.TheftData
+    content.vb: >-
+      <Signal>
+
+      Public Delegate Sub NPCAgent2D.TheftCompletedEventHandler(theftData As TheftData)
+  attributes:
+  - type: Godot.SignalAttribute
+    ctor: Godot.SignalAttribute.#ctor
+    arguments: []
+references:
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: NPCProcGen.Core.Components.Variants.TheftData
+  commentId: T:NPCProcGen.Core.Components.Variants.TheftData
+  parent: NPCProcGen.Core.Components.Variants
+  href: NPCProcGen.Core.Components.Variants.TheftData.html
+  name: TheftData
+  nameWithType: TheftData
+  fullName: NPCProcGen.Core.Components.Variants.TheftData
+- uid: NPCProcGen.Core.Components.Variants
+  commentId: N:NPCProcGen.Core.Components.Variants
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Variants
+  nameWithType: NPCProcGen.Core.Components.Variants
+  fullName: NPCProcGen.Core.Components.Variants
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Variants
+    name: Variants
+    href: NPCProcGen.Core.Components.Variants.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Variants
+    name: Variants
+    href: NPCProcGen.Core.Components.Variants.html

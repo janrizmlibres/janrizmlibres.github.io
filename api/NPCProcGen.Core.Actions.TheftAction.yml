@@ -1,0 +1,956 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.Core.Actions.TheftAction
+  commentId: T:NPCProcGen.Core.Actions.TheftAction
+  id: TheftAction
+  parent: NPCProcGen.Core.Actions
+  children:
+  - NPCProcGen.Core.Actions.TheftAction.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  - NPCProcGen.Core.Actions.TheftAction.InitializeStates
+  - NPCProcGen.Core.Actions.TheftAction.Run
+  - NPCProcGen.Core.Actions.TheftAction.Update(System.Double)
+  - NPCProcGen.Core.Actions.TheftAction._target
+  - NPCProcGen.Core.Actions.TheftAction._targetLastPos
+  - NPCProcGen.Core.Actions.TheftAction._targetResource
+  - NPCProcGen.Core.Actions.TheftAction.moveState
+  - NPCProcGen.Core.Actions.TheftAction.stealState
+  langs:
+  - csharp
+  - vb
+  name: TheftAction
+  nameWithType: TheftAction
+  fullName: NPCProcGen.Core.Actions.TheftAction
+  type: Class
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: TheftAction
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 10
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: Represents an action where an NPC agent attempts to steal a resource from a target.
+  example: []
+  syntax:
+    content: 'public class TheftAction : BaseAction'
+    content.vb: Public Class TheftAction Inherits BaseAction
+  inheritance:
+  - System.Object
+  - NPCProcGen.Core.Actions.BaseAction
+  inheritedMembers:
+  - NPCProcGen.Core.Actions.BaseAction._owner
+  - NPCProcGen.Core.Actions.BaseAction._currentState
+  - NPCProcGen.Core.Actions.BaseAction.ActionComplete
+  - NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+  - NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+  - NPCProcGen.Core.Actions.BaseAction.GetTargetPosition
+  - NPCProcGen.Core.Actions.BaseAction.IsNavigating
+  - NPCProcGen.Core.Actions.BaseAction.GetStolenResource
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NPCProcGen.Core.Actions.TheftAction._target
+  commentId: F:NPCProcGen.Core.Actions.TheftAction._target
+  id: _target
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: _target
+  nameWithType: TheftAction._target
+  fullName: NPCProcGen.Core.Actions.TheftAction._target
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _target
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 15
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: The target actor from which to steal.
+  example: []
+  syntax:
+    content: private readonly ActorTag2D _target
+    return:
+      type: NPCProcGen.ActorTag2D
+    content.vb: Private ReadOnly _target As ActorTag2D
+- uid: NPCProcGen.Core.Actions.TheftAction._targetResource
+  commentId: F:NPCProcGen.Core.Actions.TheftAction._targetResource
+  id: _targetResource
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: _targetResource
+  nameWithType: TheftAction._targetResource
+  fullName: NPCProcGen.Core.Actions.TheftAction._targetResource
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _targetResource
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 20
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: The type of resource to steal.
+  example: []
+  syntax:
+    content: private readonly ResourceType _targetResource
+    return:
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+    content.vb: Private ReadOnly _targetResource As ResourceType
+- uid: NPCProcGen.Core.Actions.TheftAction._targetLastPos
+  commentId: F:NPCProcGen.Core.Actions.TheftAction._targetLastPos
+  id: _targetLastPos
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: _targetLastPos
+  nameWithType: TheftAction._targetLastPos
+  fullName: NPCProcGen.Core.Actions.TheftAction._targetLastPos
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: _targetLastPos
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 25
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: The last known position of the target.
+  example: []
+  syntax:
+    content: private Vector2 _targetLastPos
+    return:
+      type: Godot.Vector2
+    content.vb: Private _targetLastPos As Vector2
+- uid: NPCProcGen.Core.Actions.TheftAction.moveState
+  commentId: F:NPCProcGen.Core.Actions.TheftAction.moveState
+  id: moveState
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: moveState
+  nameWithType: TheftAction.moveState
+  fullName: NPCProcGen.Core.Actions.TheftAction.moveState
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: moveState
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 30
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: The state for moving towards the target.
+  example: []
+  syntax:
+    content: private MoveState moveState
+    return:
+      type: NPCProcGen.Core.States.MoveState
+    content.vb: Private moveState As MoveState
+- uid: NPCProcGen.Core.Actions.TheftAction.stealState
+  commentId: F:NPCProcGen.Core.Actions.TheftAction.stealState
+  id: stealState
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: stealState
+  nameWithType: TheftAction.stealState
+  fullName: NPCProcGen.Core.Actions.TheftAction.stealState
+  type: Field
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: stealState
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 35
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: The state for stealing from the target.
+  example: []
+  syntax:
+    content: private StealState stealState
+    return:
+      type: NPCProcGen.Core.States.StealState
+    content.vb: Private stealState As StealState
+- uid: NPCProcGen.Core.Actions.TheftAction.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  commentId: M:NPCProcGen.Core.Actions.TheftAction.#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)
+  id: '#ctor(NPCProcGen.NPCAgent2D,NPCProcGen.ActorTag2D,NPCProcGen.Core.Components.Enums.ResourceType)'
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: TheftAction(NPCAgent2D, ActorTag2D, ResourceType)
+  nameWithType: TheftAction.TheftAction(NPCAgent2D, ActorTag2D, ResourceType)
+  fullName: NPCProcGen.Core.Actions.TheftAction.TheftAction(NPCProcGen.NPCAgent2D, NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.Enums.ResourceType)
+  type: Constructor
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: .ctor
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 43
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: Initializes a new instance of the <xref href="NPCProcGen.Core.Actions.TheftAction" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TheftAction(NPCAgent2D owner, ActorTag2D target, ResourceType type)
+    parameters:
+    - id: owner
+      type: NPCProcGen.NPCAgent2D
+      description: The NPC agent performing the action.
+    - id: target
+      type: NPCProcGen.ActorTag2D
+      description: The target actor from which to steal.
+    - id: type
+      type: NPCProcGen.Core.Components.Enums.ResourceType
+      description: The type of resource to steal.
+    content.vb: Public Sub New(owner As NPCAgent2D, target As ActorTag2D, type As ResourceType)
+  overload: NPCProcGen.Core.Actions.TheftAction.#ctor*
+  nameWithType.vb: TheftAction.New(NPCAgent2D, ActorTag2D, ResourceType)
+  fullName.vb: NPCProcGen.Core.Actions.TheftAction.New(NPCProcGen.NPCAgent2D, NPCProcGen.ActorTag2D, NPCProcGen.Core.Components.Enums.ResourceType)
+  name.vb: New(NPCAgent2D, ActorTag2D, ResourceType)
+- uid: NPCProcGen.Core.Actions.TheftAction.InitializeStates
+  commentId: M:NPCProcGen.Core.Actions.TheftAction.InitializeStates
+  id: InitializeStates
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: InitializeStates()
+  nameWithType: TheftAction.InitializeStates()
+  fullName: NPCProcGen.Core.Actions.TheftAction.InitializeStates()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: InitializeStates
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 59
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: Initializes the states for the theft action.
+  example: []
+  syntax:
+    content: private void InitializeStates()
+    content.vb: Private Sub InitializeStates()
+  overload: NPCProcGen.Core.Actions.TheftAction.InitializeStates*
+- uid: NPCProcGen.Core.Actions.TheftAction.Update(System.Double)
+  commentId: M:NPCProcGen.Core.Actions.TheftAction.Update(System.Double)
+  id: Update(System.Double)
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: Update(double)
+  nameWithType: TheftAction.Update(double)
+  fullName: NPCProcGen.Core.Actions.TheftAction.Update(double)
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Update
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 89
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: Updates the current state of the action.
+  example: []
+  syntax:
+    content: public override void Update(double delta)
+    parameters:
+    - id: delta
+      type: System.Double
+      description: The time elapsed since the last update.
+    content.vb: Public Overrides Sub Update(delta As Double)
+  overridden: NPCProcGen.Core.Actions.BaseAction.Update(System.Double)
+  overload: NPCProcGen.Core.Actions.TheftAction.Update*
+  nameWithType.vb: TheftAction.Update(Double)
+  fullName.vb: NPCProcGen.Core.Actions.TheftAction.Update(Double)
+  name.vb: Update(Double)
+- uid: NPCProcGen.Core.Actions.TheftAction.Run
+  commentId: M:NPCProcGen.Core.Actions.TheftAction.Run
+  id: Run
+  parent: NPCProcGen.Core.Actions.TheftAction
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: TheftAction.Run()
+  fullName: NPCProcGen.Core.Actions.TheftAction.Run()
+  type: Method
+  source:
+    remote:
+      path: addons/NPCProcGen/Core/Actions/TheftAction.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: Run
+    path: ../addons/NPCProcGen/Core/Actions/TheftAction.cs
+    startLine: 97
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen.Core.Actions
+  summary: Starts the theft action.
+  example: []
+  syntax:
+    content: public override void Run()
+    content.vb: Public Overrides Sub Run()
+  overridden: NPCProcGen.Core.Actions.BaseAction.Run
+  overload: NPCProcGen.Core.Actions.TheftAction.Run*
+references:
+- uid: NPCProcGen.Core.Actions
+  commentId: N:NPCProcGen.Core.Actions
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Actions
+  nameWithType: NPCProcGen.Core.Actions
+  fullName: NPCProcGen.Core.Actions
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Actions
+    name: Actions
+    href: NPCProcGen.Core.Actions.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Actions
+    name: Actions
+    href: NPCProcGen.Core.Actions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: NPCProcGen.Core.Actions.BaseAction
+  commentId: T:NPCProcGen.Core.Actions.BaseAction
+  parent: NPCProcGen.Core.Actions
+  href: NPCProcGen.Core.Actions.BaseAction.html
+  name: BaseAction
+  nameWithType: BaseAction
+  fullName: NPCProcGen.Core.Actions.BaseAction
+- uid: NPCProcGen.Core.Actions.BaseAction._owner
+  commentId: F:NPCProcGen.Core.Actions.BaseAction._owner
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction__owner
+  name: _owner
+  nameWithType: BaseAction._owner
+  fullName: NPCProcGen.Core.Actions.BaseAction._owner
+- uid: NPCProcGen.Core.Actions.BaseAction._currentState
+  commentId: F:NPCProcGen.Core.Actions.BaseAction._currentState
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction__currentState
+  name: _currentState
+  nameWithType: BaseAction._currentState
+  fullName: NPCProcGen.Core.Actions.BaseAction._currentState
+- uid: NPCProcGen.Core.Actions.BaseAction.ActionComplete
+  commentId: E:NPCProcGen.Core.Actions.BaseAction.ActionComplete
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_ActionComplete
+  name: ActionComplete
+  nameWithType: BaseAction.ActionComplete
+  fullName: NPCProcGen.Core.Actions.BaseAction.ActionComplete
+- uid: NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_TransitionTo_NPCProcGen_Core_States_BaseState_
+  name: TransitionTo(BaseState)
+  nameWithType: BaseAction.TransitionTo(BaseState)
+  fullName: NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+    name: TransitionTo
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_TransitionTo_NPCProcGen_Core_States_BaseState_
+  - name: (
+  - uid: NPCProcGen.Core.States.BaseState
+    name: BaseState
+    href: NPCProcGen.Core.States.BaseState.html
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.TransitionTo(NPCProcGen.Core.States.BaseState)
+    name: TransitionTo
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_TransitionTo_NPCProcGen_Core_States_BaseState_
+  - name: (
+  - uid: NPCProcGen.Core.States.BaseState
+    name: BaseState
+    href: NPCProcGen.Core.States.BaseState.html
+  - name: )
+- uid: NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_CompleteAction_NPCProcGen_Core_Components_Enums_ActionType_
+  name: CompleteAction(ActionType)
+  nameWithType: BaseAction.CompleteAction(ActionType)
+  fullName: NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+    name: CompleteAction
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_CompleteAction_NPCProcGen_Core_Components_Enums_ActionType_
+  - name: (
+  - uid: NPCProcGen.Core.Components.Enums.ActionType
+    name: ActionType
+    href: NPCProcGen.Core.Components.Enums.ActionType.html
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.CompleteAction(NPCProcGen.Core.Components.Enums.ActionType)
+    name: CompleteAction
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_CompleteAction_NPCProcGen_Core_Components_Enums_ActionType_
+  - name: (
+  - uid: NPCProcGen.Core.Components.Enums.ActionType
+    name: ActionType
+    href: NPCProcGen.Core.Components.Enums.ActionType.html
+  - name: )
+- uid: NPCProcGen.Core.Actions.BaseAction.GetTargetPosition
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.GetTargetPosition
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetTargetPosition
+  name: GetTargetPosition()
+  nameWithType: BaseAction.GetTargetPosition()
+  fullName: NPCProcGen.Core.Actions.BaseAction.GetTargetPosition()
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetTargetPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.GetTargetPosition
+    name: GetTargetPosition
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetTargetPosition
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.Actions.BaseAction.IsNavigating
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.IsNavigating
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_IsNavigating
+  name: IsNavigating()
+  nameWithType: BaseAction.IsNavigating()
+  fullName: NPCProcGen.Core.Actions.BaseAction.IsNavigating()
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_IsNavigating
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.IsNavigating
+    name: IsNavigating
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_IsNavigating
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.Actions.BaseAction.GetStolenResource
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.GetStolenResource
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetStolenResource
+  name: GetStolenResource()
+  nameWithType: BaseAction.GetStolenResource()
+  fullName: NPCProcGen.Core.Actions.BaseAction.GetStolenResource()
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.GetStolenResource
+    name: GetStolenResource
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetStolenResource
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.GetStolenResource
+    name: GetStolenResource
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_GetStolenResource
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NPCProcGen.ActorTag2D
+  commentId: T:NPCProcGen.ActorTag2D
+  parent: NPCProcGen
+  href: NPCProcGen.ActorTag2D.html
+  name: ActorTag2D
+  nameWithType: ActorTag2D
+  fullName: NPCProcGen.ActorTag2D
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: NPCProcGen.Core.Components.Enums.ResourceType
+  commentId: T:NPCProcGen.Core.Components.Enums.ResourceType
+  parent: NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.Core.Components.Enums.ResourceType.html
+  name: ResourceType
+  nameWithType: ResourceType
+  fullName: NPCProcGen.Core.Components.Enums.ResourceType
+- uid: NPCProcGen.Core.Components.Enums
+  commentId: N:NPCProcGen.Core.Components.Enums
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.Components.Enums
+  nameWithType: NPCProcGen.Core.Components.Enums
+  fullName: NPCProcGen.Core.Components.Enums
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.Components
+    name: Components
+    href: NPCProcGen.Core.Components.html
+  - name: .
+  - uid: NPCProcGen.Core.Components.Enums
+    name: Enums
+    href: NPCProcGen.Core.Components.Enums.html
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: NPCProcGen.Core.States.MoveState
+  commentId: T:NPCProcGen.Core.States.MoveState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.MoveState.html
+  name: MoveState
+  nameWithType: MoveState
+  fullName: NPCProcGen.Core.States.MoveState
+- uid: NPCProcGen.Core.States
+  commentId: N:NPCProcGen.Core.States
+  href: NPCProcGen.html
+  name: NPCProcGen.Core.States
+  nameWithType: NPCProcGen.Core.States
+  fullName: NPCProcGen.Core.States
+  spec.csharp:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+  spec.vb:
+  - uid: NPCProcGen
+    name: NPCProcGen
+    href: NPCProcGen.html
+  - name: .
+  - uid: NPCProcGen.Core
+    name: Core
+    href: NPCProcGen.Core.html
+  - name: .
+  - uid: NPCProcGen.Core.States
+    name: States
+    href: NPCProcGen.Core.States.html
+- uid: NPCProcGen.Core.States.StealState
+  commentId: T:NPCProcGen.Core.States.StealState
+  parent: NPCProcGen.Core.States
+  href: NPCProcGen.Core.States.StealState.html
+  name: StealState
+  nameWithType: StealState
+  fullName: NPCProcGen.Core.States.StealState
+- uid: NPCProcGen.Core.Actions.TheftAction
+  commentId: T:NPCProcGen.Core.Actions.TheftAction
+  href: NPCProcGen.Core.Actions.TheftAction.html
+  name: TheftAction
+  nameWithType: TheftAction
+  fullName: NPCProcGen.Core.Actions.TheftAction
+- uid: NPCProcGen.Core.Actions.TheftAction.#ctor*
+  commentId: Overload:NPCProcGen.Core.Actions.TheftAction.#ctor
+  href: NPCProcGen.Core.Actions.TheftAction.html#NPCProcGen_Core_Actions_TheftAction__ctor_NPCProcGen_NPCAgent2D_NPCProcGen_ActorTag2D_NPCProcGen_Core_Components_Enums_ResourceType_
+  name: TheftAction
+  nameWithType: TheftAction.TheftAction
+  fullName: NPCProcGen.Core.Actions.TheftAction.TheftAction
+  nameWithType.vb: TheftAction.New
+  fullName.vb: NPCProcGen.Core.Actions.TheftAction.New
+  name.vb: New
+- uid: NPCProcGen.NPCAgent2D
+  commentId: T:NPCProcGen.NPCAgent2D
+  parent: NPCProcGen
+  href: NPCProcGen.NPCAgent2D.html
+  name: NPCAgent2D
+  nameWithType: NPCAgent2D
+  fullName: NPCProcGen.NPCAgent2D
+- uid: NPCProcGen.Core.Actions.TheftAction.InitializeStates*
+  commentId: Overload:NPCProcGen.Core.Actions.TheftAction.InitializeStates
+  href: NPCProcGen.Core.Actions.TheftAction.html#NPCProcGen_Core_Actions_TheftAction_InitializeStates
+  name: InitializeStates
+  nameWithType: TheftAction.InitializeStates
+  fullName: NPCProcGen.Core.Actions.TheftAction.InitializeStates
+- uid: NPCProcGen.Core.Actions.BaseAction.Update(System.Double)
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.Update(System.Double)
+  parent: NPCProcGen.Core.Actions.BaseAction
+  isExternal: true
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Update_System_Double_
+  name: Update(double)
+  nameWithType: BaseAction.Update(double)
+  fullName: NPCProcGen.Core.Actions.BaseAction.Update(double)
+  nameWithType.vb: BaseAction.Update(Double)
+  fullName.vb: NPCProcGen.Core.Actions.BaseAction.Update(Double)
+  name.vb: Update(Double)
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.Update(System.Double)
+    name: Update
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Update_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: NPCProcGen.Core.Actions.TheftAction.Update*
+  commentId: Overload:NPCProcGen.Core.Actions.TheftAction.Update
+  href: NPCProcGen.Core.Actions.TheftAction.html#NPCProcGen_Core_Actions_TheftAction_Update_System_Double_
+  name: Update
+  nameWithType: TheftAction.Update
+  fullName: NPCProcGen.Core.Actions.TheftAction.Update
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: NPCProcGen.Core.Actions.BaseAction.Run
+  commentId: M:NPCProcGen.Core.Actions.BaseAction.Run
+  parent: NPCProcGen.Core.Actions.BaseAction
+  href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Run
+  name: Run()
+  nameWithType: BaseAction.Run()
+  fullName: NPCProcGen.Core.Actions.BaseAction.Run()
+  spec.csharp:
+  - uid: NPCProcGen.Core.Actions.BaseAction.Run
+    name: Run
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Run
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NPCProcGen.Core.Actions.BaseAction.Run
+    name: Run
+    href: NPCProcGen.Core.Actions.BaseAction.html#NPCProcGen_Core_Actions_BaseAction_Run
+  - name: (
+  - name: )
+- uid: NPCProcGen.Core.Actions.TheftAction.Run*
+  commentId: Overload:NPCProcGen.Core.Actions.TheftAction.Run
+  href: NPCProcGen.Core.Actions.TheftAction.html#NPCProcGen_Core_Actions_TheftAction_Run
+  name: Run
+  nameWithType: TheftAction.Run
+  fullName: NPCProcGen.Core.Actions.TheftAction.Run

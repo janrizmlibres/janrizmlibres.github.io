@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmergentEchoes.Entities.Actors
+  commentId: N:EmergentEchoes.Entities.Actors
+  id: EmergentEchoes.Entities.Actors
+  children:
+  - EmergentEchoes.Entities.Actors.NPC
+  - EmergentEchoes.Entities.Actors.NPC.State
+  - EmergentEchoes.Entities.Actors.Player
+  langs:
+  - csharp
+  - vb
+  name: EmergentEchoes.Entities.Actors
+  nameWithType: EmergentEchoes.Entities.Actors
+  fullName: EmergentEchoes.Entities.Actors
+  type: Namespace
+  assemblies:
+  - EmergentEchoes
+references:
+- uid: EmergentEchoes.Entities.Actors.NPC
+  commentId: T:EmergentEchoes.Entities.Actors.NPC
+  href: EmergentEchoes.Entities.Actors.NPC.html
+  name: NPC
+  nameWithType: NPC
+  fullName: EmergentEchoes.Entities.Actors.NPC
+- uid: EmergentEchoes.Entities.Actors.NPC.State
+  commentId: T:EmergentEchoes.Entities.Actors.NPC.State
+  parent: EmergentEchoes.Entities.Actors
+  href: EmergentEchoes.Entities.Actors.NPC.html
+  name: NPC.State
+  nameWithType: NPC.State
+  fullName: EmergentEchoes.Entities.Actors.NPC.State
+  spec.csharp:
+  - uid: EmergentEchoes.Entities.Actors.NPC
+    name: NPC
+    href: EmergentEchoes.Entities.Actors.NPC.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors.NPC.State
+    name: State
+    href: EmergentEchoes.Entities.Actors.NPC.State.html
+  spec.vb:
+  - uid: EmergentEchoes.Entities.Actors.NPC
+    name: NPC
+    href: EmergentEchoes.Entities.Actors.NPC.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors.NPC.State
+    name: State
+    href: EmergentEchoes.Entities.Actors.NPC.State.html
+- uid: EmergentEchoes.Entities.Actors.Player
+  commentId: T:EmergentEchoes.Entities.Actors.Player
+  href: EmergentEchoes.Entities.Actors.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: EmergentEchoes.Entities.Actors.Player
+- uid: EmergentEchoes.Entities.Actors
+  commentId: N:EmergentEchoes.Entities.Actors
+  href: EmergentEchoes.html
+  name: EmergentEchoes.Entities.Actors
+  nameWithType: EmergentEchoes.Entities.Actors
+  fullName: EmergentEchoes.Entities.Actors
+  spec.csharp:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Entities
+    name: Entities
+    href: EmergentEchoes.Entities.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors
+    name: Actors
+    href: EmergentEchoes.Entities.Actors.html
+  spec.vb:
+  - uid: EmergentEchoes
+    name: EmergentEchoes
+    href: EmergentEchoes.html
+  - name: .
+  - uid: EmergentEchoes.Entities
+    name: Entities
+    href: EmergentEchoes.Entities.html
+  - name: .
+  - uid: EmergentEchoes.Entities.Actors
+    name: Actors
+    href: EmergentEchoes.Entities.Actors.html

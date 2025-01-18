@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  commentId: T:NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  id: NPCAgent2D.ActionStateEnteredEventHandler
+  parent: NPCProcGen
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NPCAgent2D.ActionStateEnteredEventHandler
+  nameWithType: NPCAgent2D.ActionStateEnteredEventHandler
+  fullName: NPCProcGen.NPCAgent2D.ActionStateEnteredEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs
+      branch: feat/emote-bubbles
+      repo: https://github.com/janrizmlibres/emergent-echoes.git
+    id: ActionStateEnteredEventHandler
+    path: ../addons/NPCProcGen/Nodes/NPCAgent2D/NPCAgent2D.cs
+    startLine: 76
+  assemblies:
+  - EmergentEchoes
+  namespace: NPCProcGen
+  syntax:
+    content: >-
+      [Signal]
+
+      public delegate void NPCAgent2D.ActionStateEnteredEventHandler(Variant state)
+    parameters:
+    - id: state
+      type: Godot.Variant
+    content.vb: >-
+      <Signal>
+
+      Public Delegate Sub NPCAgent2D.ActionStateEnteredEventHandler(state As [Variant])
+  attributes:
+  - type: Godot.SignalAttribute
+    ctor: Godot.SignalAttribute.#ctor
+    arguments: []
+references:
+- uid: NPCProcGen
+  commentId: N:NPCProcGen
+  href: NPCProcGen.html
+  name: NPCProcGen
+  nameWithType: NPCProcGen
+  fullName: NPCProcGen
+- uid: Godot.Variant
+  commentId: T:Godot.Variant
+  parent: Godot
+  isExternal: true
+  name: Variant
+  nameWithType: Variant
+  fullName: Godot.Variant
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
